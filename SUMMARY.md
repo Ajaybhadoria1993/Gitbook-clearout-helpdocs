@@ -42,15 +42,14 @@
 ## REVERSE LOOKUP
 
 * [Overview](reverse-lookup/overview.md)
-* [Email Reverse Lookup ](reverse-lookup/email-reverse-lookup.md)
-* [Linkedin Reverse Lookup ](reverse-lookup/linkedin-reverse-lookup.md)
+* [Email Reverse Lookup](reverse-lookup/email-reverse-lookup.md)
+* [Linkedin Reverse Lookup](reverse-lookup/linkedin-reverse-lookup.md)
 * [Domain Reverse Lookup](reverse-lookup/domain-reverse-lookup.md)
 * [FAQs](reverse-lookup/faqs.md)
 
 ## Developers
 
 * [API](developers/api/README.md)
-  * [Overview](developers/api/overview.md)
   * ```yaml
     type: builtin:openapi
     props:
@@ -60,8 +59,9 @@
       spec:
         ref:
           kind: openapi
-          spec: co-openapi-bundle-13
+          spec: ajay-manick-test-api-file
     ```
+  * [Overview](developers/api/overview.md)
 * [Webhooks](developers/webhooks/README.md)
   * [Webhooks Overview](developers/webhooks/overview.md "Overview")
   * [Set up & Edit Webhooks](developers/webhooks/set-up-and-edit-webhooks.md)
@@ -70,7 +70,7 @@
   * [Test Webhooks](developers/webhooks/test-webhooks.md)
   * [Redelivering Webhooks](developers/webhooks/redelivering-webhooks.md)
 * [SDKs](developers/sdks/README.md)
-  * [Node.js ](developers/sdks/node.js.md)
+  * [Node.js](developers/sdks/node.js.md)
   * [JavaScript Widget](developers/sdks/javascript-widget.md)
 * [Ui References](developers/ui-references.md)
 
@@ -88,7 +88,7 @@
 ## INTEGRATIONS
 
 * [Overview](integrations/overview.md)
-* [HubSpot ](integrations/hubspot/README.md)
+* [HubSpot](integrations/hubspot/README.md)
   * [HubSpot CRM](integrations/hubspot/hubspot-crm.md)
   * [HubSpot Forms](integrations/hubspot/hubspot-form.md)
   * [HubSpot Chatflows](integrations/hubspot/hubspot-chatflow.md)
