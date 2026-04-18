@@ -6,24 +6,24 @@
 
 {% stepper %}
 {% step %}
-#### Connect with Make <a href="#oh178" id="oh178"></a>
+#### **Connect with Make**
 
 To integrate Clearout with any other app via Make, you need a Make account.​ If you don’t have one, [create a Make account](https://www.make.com/en/register?utm_source=clearout\&utm_medium=partner\&utm_campaign=clearout-partner-program)
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/clearout-integrations-1024x557.webp" alt="Connect Clearout via Make"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FpWfRROQTX34h7E13mbcg%252Fclearout-integrations-1024x557.webp%3Falt%3Dmedia%26token%3D583ff7cc-91e3-4013-9964-323ccaa05af4&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=d5f446cf&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Create a new scenario <a href="#hjcie" id="hjcie"></a>
+#### Create a new scenario <a href="#hjcie" id="hjcie"></a>
 
 * **Log in** to your Make account.
 * Click **Create a new scenario** to start building your workflow
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Screenshot-2_1024x524-1024x453 (1).png" alt="Create new scenario on make to build workflow"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FydKzy5bXDKeQdyl56XHQ%252FScreenshot-2_1024x524-1024x453.png%3Falt%3Dmedia%26token%3D29f830d9-373d-4dde-bbad-24cd6669fe5b&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=86a11e6e&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### &#x20;Set up a trigger connection
+#### Set up a trigger connection
 
 Every scenario starts with a module (connector) that triggers the workflow. For example, using **Google Sheets**:​
 
@@ -33,11 +33,11 @@ Every scenario starts with a module (connector) that triggers the workflow. For 
 
 You can use any other trigger app (forms, CRM, etc.) in the same way.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Screenshot-3-1024x705 (1).png" alt="SEt trigger to validate email address of new contacts"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FpJ8Lq0WzJnfCQx1G4EcD%252FScreenshot-3-1024x705.png%3Falt%3Dmedia%26token%3D0cf07e4d-b825-4977-9739-fa59eefe26a3&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=34ce979d&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Select a Clearout action
+#### Select a Clearout action
 
 After your trigger is configured, add a Clearout action module:​
 
@@ -47,11 +47,11 @@ After your trigger is configured, add a Clearout action module:​
 
 This action will take an email from the trigger module and send it to Clearout for validation.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Screenshot-4-1024x665 (1).png" alt="Select Clearout as Action to trigger the validition"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FNL7TQa2jiFVuCbB5Ip3R%252FScreenshot-4-1024x665.png%3Falt%3Dmedia%26token%3D5fc9478a-2fbe-4f63-8099-3cf9ea338491&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=959c4c13&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-#### Connect your Clearout account <a href="#ek9ur" id="ek9ur"></a>
+**Connect your Clearout account**
 
 * In the Clearout module, click **Add** to create a new connection.​
 * When prompted, paste your **Clearout API Token**
@@ -63,18 +63,18 @@ This action will take an email from the trigger module and send it to Clearout f
 * Click **Create API Token** to generate a new token.
 * Copy the token and paste it into the **Create a connection** popup in Make, then save.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Screenshot-5-1024x551.png" alt="Paste Clearout API Token to create a connection with Make"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FlpWlEJhkaEzM7aqZJUUg%252FScreenshot-5-1024x551.png%3Falt%3Dmedia%26token%3D285ec79b-0875-4bc3-a31c-c81997e4ac85&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=65d6ff8f&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-#### Execute the scenario <a href="#rdppx" id="rdppx"></a>
+**Execute the scenario**
 
 After all modules are configured:
 
 1. Click **Run once** (or **Run**) in Make to execute the scenario.
 2. Check the Clearout module’s output to see verification results for each processed email.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Screenshot-6-1024x667 (1).png" alt="Configure and run the module to test the email validation"><figcaption></figcaption></figure></div>
+<div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FFwX2XQ93SxMrvRGSwv7s%252FScreenshot-6-1024x667.png%3Falt%3Dmedia%26token%3Da212dfb7-6579-4cc8-a997-fc2e92ee9334&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=43e17af7&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 
 From here, you can add more modules (filters, routers, CRM updates, notifications) to route valid and invalid emails differently, fully **automating your verification flow with Make and Clearout.**
 {% endstep %}
