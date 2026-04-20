@@ -45,7 +45,7 @@ After configuring your trigger, add a Clearout module to perform the desired act
 * From the list of available actions, choose one based on your requirement.
 * Click **OK** to proceed.​
 
-Clearout provides the following actions in Make.com
+Clearout provides the following key actions in Make.com
 
 **Verify Email Address**
 
