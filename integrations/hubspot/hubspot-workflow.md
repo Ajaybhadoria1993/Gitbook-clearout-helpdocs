@@ -24,7 +24,7 @@ To achieve this, you’ll complete **three main steps**, then test and review fi
 
 {% stepper %}
 {% step %}
-### Syncing Clearout Standard Fields to Hubspot CRM&#x20;
+#### Syncing Clearout Standard Fields to Hubspot CRM
 
 To begin, please ensure that Clearout's standard properties are present in your HubSpot account.
 
@@ -36,31 +36,20 @@ These properties will later be populated by the workflow’s custom code step.
 {% endstep %}
 
 {% step %}
-### Creating HubSpot Workflow
+#### Creating HubSpot Workflow
 
 Next, create a workflow that will host the Clearout validation logic.
 
 * In HubSpot, go to **Automations → Workflows**.
-
-<p align="center"><img src="../../.gitbook/assets/unknown (6).png" alt="Go to HubSpot Automations to Setup Workflows" data-size="original"></p>
-
 * Click **Create workflow → From scratch**.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/from scratch.png" alt="Create New HubSpot Workflow" width="563"><figcaption></figcaption></figure></div>
-
 * Choose **Contact‑based** and **Trigger manually** to start configuring the workflow.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/trigger manually.png" alt="Select Contact‑based and Trigger manually to start configuring the workflow." width="563"><figcaption></figcaption></figure></div>
-
 * You will adjust the triggers in the next step so the workflow runs whenever a new contact is created, or a contact’s email is updated, Clearout’s Verification when any contact gets added or updated into the CRM
-
-<div align="center" data-with-frame="true"><figure><img src="../../.gitbook/assets/crm.png" alt="Adjust the triggers when a new contact is created" width="563"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Set up the workflow <a href="#id-3-set-up-the-workflow" id="id-3-set-up-the-workflow"></a>
+#### Set up the workflow <a href="#id-3-set-up-the-workflow" id="id-3-set-up-the-workflow"></a>
 
-#### 3.1 Configure triggers
+**3.1 Configure triggers**
 
 Make the workflow run on:
 
@@ -70,35 +59,19 @@ Make the workflow run on:
 Steps:
 
 1. Click **Set enrollment triggers** (Start triggers).
-
-<p align="center"><img src="../../.gitbook/assets/image (11).png" alt="Set a Enrollment Triggers"></p>
-
 2. Add the first trigger under **Date events → Record created** (this covers new contacts).​
-
-<figure><img src="../../.gitbook/assets/image (12).png" alt="Add the first trigger under Date events for Record Created" width="563"><figcaption></figcaption></figure>
-
-3.  Add a second trigger under the **OR** section: choose **Date events → Property value changed**.​
-
-    <figure><img src="../../.gitbook/assets/image (13).png" alt="Add the first trigger under Date events for Property Value Changed"><figcaption></figcaption></figure>
+3. Add a second trigger under the **OR** section: choose **Date events → Property value changed**.​
 4. For this second trigger, select the **Email** property and set **New value → is known**, then click **Save**.​
-
-<figure><img src="../../.gitbook/assets/image (14).png" alt="Set Email as new value &#x22;Unknown&#x22;" width="563"><figcaption></figcaption></figure>
 
 Now the workflow will trigger whenever a contact is created or its email address is updated.
 
-#### 3.2 Add Clearout validation via Custom Code
+**3.2 Add Clearout validation via Custom Code**
 
 Add a step that calls Clearout and returns verification output fields
 
 1. Click the **+** icon below the trigger to add an action.
 2. Choose **Data Ops → Custom code.**
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/ev nodejs.png" alt="Add custom code under &#x22;Data Ops&#x22;" width="563"><figcaption></figcaption></figure></div>
-
 3. Under **Property to include in code**, select the **Email** property (under Text properties). This makes the contact’s email available inside the Node.js code.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/custom nodejs.png" alt="Select Email property" width="563"><figcaption></figcaption></figure></div>
-
 4. In the code editor, replace the default code with the following (update the token before saving):
 
 {% code lineNumbers="true" fullWidth="false" expandable="true" %}
@@ -147,66 +120,53 @@ exports.main = async (event, callback) => {
 
 5. Generate a Clearout [API Token](https://app.clearout.io/developer/api/list). Copy and replace `REPLACE_WITH_YOUR_SERVER_APP_TOKEN` with your API token.​
 6. Under **Data output**, define the outputs: `status`, `safe_to_send`, and `verified_on` (names must match the code above).
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/variable name must workflow.png" alt="Define Output Properties " width="563"><figcaption></figcaption></figure></div>
-
 7. Use the **Test action** to run the step against a sample contact; if everything is correct, you should see a successful response with these output fields.
+8. Save this action. The test call will also appear in your Clearout [**Activities**](https://app.clearout.io/activities) section.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/variable name must.png" alt="Successful response with selected output fields"><figcaption></figcaption></figure></div>
-
-8. Save this action. The test call will also appear in your Clearout [**Activities**](https://app.clearout.io/activities) section.&#x20;
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/clearout account activities.png" alt="Check Clearout Activities to confirm successful implementation"><figcaption></figcaption></figure></div>
-
-#### 3.3 Branch and handle invalid vs valid contacts
+**3.3 Branch and handle invalid vs valid contacts**
 
 Now, create branches to handle contacts differently based on Clearout’s result.
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt="Branch to handle Valid and invalid email addresses" width="563"><figcaption></figcaption></figure>
+1.  Add a new action below the custom code step and choose **Branch → One property or action output**.​ 1.
 
-1. Add a new action below the custom code step and choose **Branch → One property or action output**.​
-   1.
+    ```
+    <figure><img src="../../.gitbook/assets/image (16).png" alt="Select &#x22;One property or action output&#x22; in custom code"><figcaption></figcaption></figure>
+    ```
+2.  For the **Select property**, choose **Action outputs → status** (from the custom code step).​ 1.
 
-       <figure><img src="../../.gitbook/assets/image (16).png" alt="Select &#x22;One property or action output&#x22; in custom code"><figcaption></figcaption></figure>
-2. For the **Select property**, choose **Action outputs → status** (from the custom code step).​
-   1.
-
-       <figure><img src="../../.gitbook/assets/image (17).png" alt="Select Action outputs as Status "><figcaption></figcaption></figure>
+    ```
+    <figure><img src="../../.gitbook/assets/image (17).png" alt="Select Action outputs as Status "><figcaption></figcaption></figure>
+    ```
 3. Create two branches:
-   * Branch A: `status` **equals** `invalid`
-     *
+   *   Branch A: `status` **equals** `invalid` \*
 
-         <figure><img src="../../.gitbook/assets/image (18).png" alt="Branch out to capture valid and invalid status"><figcaption></figcaption></figure>
-   * Branch B: `status` **is not equal to** `invalid`.​
-     *
+       ```
+       <figure><img src="../../.gitbook/assets/image (18).png" alt="Branch out to capture valid and invalid status"><figcaption></figcaption></figure>
+       ```
+   *   Branch B: `status` **is not equal to** `invalid`.​ \*
 
-         <figure><img src="../../.gitbook/assets/image (19).png" alt="Branch out to capture valid and invalid status"><figcaption></figcaption></figure>
+       ```
+       <figure><img src="../../.gitbook/assets/image (19).png" alt="Branch out to capture valid and invalid status"><figcaption></figcaption></figure>
+       ```
 
-### Branch A: Delete invalid contacts (optional)
+#### Branch A: Delete invalid contacts (optional)
 
 If you want to automatically remove invalid contacts:
 
 1. Under the **status = invalid** branch, add a new action.​
-2.  Select **CRM → Delete contact** and save.​
-
-
-
-    <figure><img src="../../.gitbook/assets/image (24).png" alt="Delete Invalid Email address After validation" width="563"><figcaption></figcaption></figure>
-
-
-
-    <figure><img src="../../.gitbook/assets/image (21).png" alt="workflow to Delete Invalid Email address After validation" width="563"><figcaption></figcaption></figure>
+2. Select **CRM → Delete contact** and save.​
 
 (You can skip this step if you prefer to keep invalid contacts and just mark them.)
 
-### Branch B: Update Clearout fields for valid/other contacts
+#### Branch B: Update Clearout fields for valid/other contacts
 
 1. Under the **status is not equal to invalid** branch, add a new action.
 2. Select **CRM → Set property value**.​
-3. Under **Property to set**, choose one of the Clearout properties from the **Clearout Information** group (for example, **Clearout Verification Status**).​
-   1.
+3.  Under **Property to set**, choose one of the Clearout properties from the **Clearout Information** group (for example, **Clearout Verification Status**).​ 1.
 
-       <figure><img src="../../.gitbook/assets/image (22).png" alt="set &#x22;property to set&#x22; as &#x22;Clearout Verification Status&#x22;"><figcaption></figcaption></figure>
+    ```
+    <figure><img src="../../.gitbook/assets/image (22).png" alt="set &#x22;property to set&#x22; as &#x22;Clearout Verification Status&#x22;"><figcaption></figcaption></figure>
+    ```
 4. In **Insert data**, select **Action outputs → status** as the value.​
 5. Save the action.​
 
@@ -220,27 +180,21 @@ When finished, your workflow should show:
 
 * Trigger (record created OR email changed) → Custom code (Clearout call) → Branch (status invalid vs not invalid) →
   * Invalid branch: Delete contact (optional)
-  *   Valid/other branch: Set Clearout fields on the contact.​
-
-
-
-      <figure><img src="../../.gitbook/assets/image (20).png" alt="Trigger to check the setup" width="563"><figcaption></figcaption></figure>
+  * Valid/other branch: Set Clearout fields on the contact.​
 
 Finally, click **Review and publish the workflow** to activate it.
 {% endstep %}
 
 {% step %}
-### Test the workflow <a href="#id-4-test-the-workflow" id="id-4-test-the-workflow"></a>
+#### Test the workflow <a href="#id-4-test-the-workflow" id="id-4-test-the-workflow"></a>
 
 * In HubSpot, manually create a new contact under **CRM → Contacts** with a test email and check if Clearout verification runs.​
 * Confirm in Clearout **Activities** or by viewing the contact’s **Clearout Information** properties (for example, Clearout Verification Status, Safe To Send, Verified On) that the data is populated.​
 * Edit the email address of an existing contact and verify that the workflow triggers again and updates the Clearout's fields accordingly
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/testing workflow hs clearout.png" alt="Test the workflow" width="563"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Clearout ↔ HubSpot standard field mappings <a href="#id-5-clearout--hubspot-standard-field-mappings" id="id-5-clearout--hubspot-standard-field-mappings"></a>
+#### Clearout ↔ HubSpot standard field mappings <a href="#id-5-clearout--hubspot-standard-field-mappings" id="id-5-clearout--hubspot-standard-field-mappings"></a>
 
 **Property group in HubSpot:** `Clearout Information`.
 
@@ -248,4 +202,4 @@ Finally, click **Review and publish the workflow** to activate it.
 {% endstep %}
 {% endstepper %}
 
-If you have questions or need help fine-tuning this workflow, you can reach out to the [Clearout Support](../../help-and-support/ask-a-question.md)&#x20;
+If you have questions or need help fine-tuning this workflow, you can reach out to the [Clearout Support](../../help-and-support/ask-a-question.md)

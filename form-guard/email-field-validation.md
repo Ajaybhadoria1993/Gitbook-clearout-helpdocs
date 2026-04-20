@@ -7,11 +7,9 @@ icon: at
 
 The Form Guard provides a **flexible and powerful email validation component** that allows you to configure how Clearout should validate email addresses based on your specific requirements. This section covers the various field setting options available to customize the email validation behavior.
 
-## Email Field Setting Options  <a href="#email-field-setting-options" id="email-field-setting-options"></a>
+## Email Field Setting Options <a href="#email-field-setting-options" id="email-field-setting-options"></a>
 
 Find below the various **email field setting options** that can be configured as part of the Guard creation or by using the customized code
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/email_validation_clearout_formguard.webp" alt="select and customize Email validation settings for Email Field"><figcaption><p>Customize how email fields are validated on your forms.</p></figcaption></figure></div>
 
 ### Acceptable Values <a href="#acceptable-values" id="acceptable-values"></a>
 
@@ -37,7 +35,7 @@ This option allows you to customize the feedback (error) messages displayed on f
 * **Default:** A predefined set of feedback messages automatically set by the Form Guard.
 * **Custom:** Displays all possible feedback message variations for the email field, with their default values shown as placeholder text in the input field.
 
-## Hooks  <a href="#hooks" id="hooks"></a>
+## Hooks <a href="#hooks" id="hooks"></a>
 
 This option allows you to define custom JavaScript functions that execute either before or after Clearout's form validation.
 
@@ -101,7 +99,7 @@ By default, the **Automatic** mode is enabled, allowing Clearout to identify for
 * Element's name is equal to any one of **email**, **email\_address**, **clearout-email**
 * Element has attribute **data-clearout-email-field**
 
-## Optional Fields&#x20;
+## Optional Fields
 
 In case the email input field is set as optional, without requiring the visitor to fill it, then you can set this option to <mark style="color:$info;">**"Yes."**</mark>
 
@@ -110,6 +108,6 @@ Here's how it works:
 * **If the field is left empty**: The form submission will proceed without validation for that field.
 * **If the field is filled**: Even though it's optional, the entered value will be validated. The form will only be allowed to submit if the value passes validation based on your configured criteria.
 
-## Testing&#x20;
+## Testing
 
-For testing purposes, you can use the [test email addresses](../developers/api/overview.md#testing) to verify different validation scenarios without incurring any credit cost.&#x20;
+For testing purposes, you can use the [test email addresses](../developers/api/overview.md#testing) to verify different validation scenarios without incurring any credit cost.

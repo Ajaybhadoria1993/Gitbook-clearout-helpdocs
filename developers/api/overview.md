@@ -44,13 +44,11 @@ Monitor your usage, manage credits, and upgrade your plan as it grows.
 {% endstep %}
 {% endstepper %}
 
-## API Base URL&#x20;
+## API Base URL
 
 Clearout APIs use a **base URL** to which all endpoint paths are appended. Since the base URL may vary based on your account host region, API users should check it by logging into the [Clearout app](https://app.clearout.io/developer/reference) and navigating to the **Developer** **→ Reference** tab.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/api-base-url.png" alt="Overview of Developer section showcasing API Base URL "><figcaption></figcaption></figure></div>
-
-## Generating an API Token&#x20;
+## Generating an API Token
 
 After signing up and logging in, select the **Developer** tab located at the top-right, and then click on the **API → Create API Token** button. All created tokens are listed under this tab. Use this token as the **Bearer** value in all API requests. Tokens can be reset at any time by clicking the **Reset Token** icon.
 
@@ -58,8 +56,6 @@ After signing up and logging in, select the **Developer** tab located at the top
 * Navigate to **Developer → API**.
 * Click [**Create API Token**](https://app.clearout.io/developer/api/list).
 * Use the token as the `Authorization: Bearer <TOKEN>` header in all API requests.<br>
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/api-token-generation.png" alt="Generating an API Token "><figcaption></figcaption></figure></div>
 
 ### Example - Using a CURL Request
 
@@ -82,13 +78,13 @@ These are the HTTP response codes set by Clearout to indicate the success or fai
 
 The following Clearout error codes will be included in the error response object:
 
-<table data-header-hidden><thead><tr><th width="163.10546875" align="center"></th><th></th></tr></thead><tbody><tr><td align="center"><strong>Error Code</strong></td><td><strong>Description</strong></td></tr><tr><td align="center">1001</td><td>You’ve reached the maximum number of bulk verify requests. Please wait for the existing request to complete or contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1002</td><td>You’ve exhausted your credits. Please add additional credits to continue</td></tr><tr><td align="center">1004</td><td>Unable to determine email addresses in the list. Ensure emails are present or explicitly specified in a header row using <strong>Email</strong>, <strong>Emails</strong>, <strong>Email address</strong>, or <strong>Emailaddress</strong></td></tr><tr><td align="center">1007</td><td>List has expired. Contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1008</td><td>You are not authorized to access this resource</td></tr><tr><td align="center">1017</td><td>You’ve reached the daily verify limit. Try again the next day or contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1027</td><td>Email address not found</td></tr><tr><td align="center">1028</td><td>Available credits (<strong>AVAILABLE_CREDITS</strong>) are insufficient to verify <strong>NUMBER_OF_EMAILS</strong> emails</td></tr><tr><td align="center">1029</td><td>List is not available</td></tr><tr><td align="center">1030</td><td>API rate limit reached. Retry after <strong>[CURRENT TIMESTAMP + 60 seconds] UTC</strong>, or upgrade your plan / contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1031</td><td>You have exhausted your credits. </td></tr><tr><td align="center">1032</td><td>You have reached your daily verify limit; please try next day</td></tr><tr><td align="center">1074</td><td>Invalid origin</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="163.10546875" align="center"></th><th></th></tr></thead><tbody><tr><td align="center"><strong>Error Code</strong></td><td><strong>Description</strong></td></tr><tr><td align="center">1001</td><td>You’ve reached the maximum number of bulk verify requests. Please wait for the existing request to complete or contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1002</td><td>You’ve exhausted your credits. Please add additional credits to continue</td></tr><tr><td align="center">1004</td><td>Unable to determine email addresses in the list. Ensure emails are present or explicitly specified in a header row using <strong>Email</strong>, <strong>Emails</strong>, <strong>Email address</strong>, or <strong>Emailaddress</strong></td></tr><tr><td align="center">1007</td><td>List has expired. Contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1008</td><td>You are not authorized to access this resource</td></tr><tr><td align="center">1017</td><td>You’ve reached the daily verify limit. Try again the next day or contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1027</td><td>Email address not found</td></tr><tr><td align="center">1028</td><td>Available credits (<strong>AVAILABLE_CREDITS</strong>) are insufficient to verify <strong>NUMBER_OF_EMAILS</strong> emails</td></tr><tr><td align="center">1029</td><td>List is not available</td></tr><tr><td align="center">1030</td><td>API rate limit reached. Retry after <strong>[CURRENT TIMESTAMP + 60 seconds] UTC</strong>, or upgrade your plan / contact <a href="mailto:us@clearout.io"><strong>us@clearout.io</strong></a></td></tr><tr><td align="center">1031</td><td>You have exhausted your credits.</td></tr><tr><td align="center">1032</td><td>You have reached your daily verify limit; please try next day</td></tr><tr><td align="center">1074</td><td>Invalid origin</td></tr></tbody></table>
 
 ### Flatten Response Object
 
 By adding <mark style="color:$primary;">response=flat</mark> as a query parameter to any API request, the nested object will be converted into a flat object. This is helpful when your system does not support nested JSON objects.
 
-## Cross-Origin Resource Sharing (CORS)&#x20;
+## Cross-Origin Resource Sharing (CORS)
 
 Clearout does not support API requests directly from web browsers or client apps. This means Clearout APIs can be used only from your **server-side application**
 
@@ -128,9 +124,9 @@ To increase your rate limit, upgrade your plan or contact [support](/broken/page
 
 ### Plan-Specific Limits
 
-Clearout offers flexible pay-as-you-go and subscription plans, each with different API limits. Compared to pay-as-you-go plans, subscription plans offer higher limits, which you can increase by selecting an add-on option.&#x20;
+Clearout offers flexible pay-as-you-go and subscription plans, each with different API limits. Compared to pay-as-you-go plans, subscription plans offer higher limits, which you can increase by selecting an add-on option.
 
-Please find below the breakup of plans and API **Request Per Limits (RPM).**&#x20;
+Please find below the breakup of plans and API **Request Per Limits (RPM).**
 
 <h4 align="center">Monthly/Annual Subscription</h4>
 
@@ -145,7 +141,7 @@ Please find below the breakup of plans and API **Request Per Limits (RPM).**&#x2
 | 1,000,000           |             300            |             190            |
 | More than 5,000,000 |             400            |             240            |
 
-<h4 align="center">Pay-As-You-Go </h4>
+<h4 align="center">Pay-As-You-Go</h4>
 
 | Credits              | Instant Email Verify (RPM) | Instant Email Finder (RPM) |
 | -------------------- | :------------------------: | :------------------------: |
@@ -160,7 +156,7 @@ Please find below the breakup of plans and API **Request Per Limits (RPM).**&#x2
 
 For more details on limits and pricing, please refer to the [pricing page](https://clearout.io/pricing/) here.
 
-## Testing&#x20;
+## Testing
 
 To confirm that your integration works as intended without incurring credits, use the test email addresses listed below for all possible email verification results.
 

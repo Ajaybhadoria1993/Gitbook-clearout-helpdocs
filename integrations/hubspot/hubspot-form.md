@@ -10,7 +10,7 @@ You can also watch a short walkthrough:
 
 {% embed url="https://www.youtube.com/watch?embeds_referring_euri=https://clearout.io/&v=VDbZHGcV6Wg" %}
 
-## Supported HubSpot Forms&#x20;
+## Supported HubSpot Forms
 
 Select the type of integration you need to enable seamless Form validation using Clearout [Form Guard](/broken/pages/rXGOw2nHnrFS098BfLhM) and ensure accurate lead capture across your HubSpot forms.<br>
 
@@ -30,12 +30,10 @@ The new HubSpot Embed Forms are designed to render inside **\<iframe/>** hosted 
 
 However, the form can be rendered as raw HTML on the page by using the **Developer Code (Advanced)** instead of the default HubSpot embed code. This allows the Clearout Form Guard snippet to detect and attach to the form for real-time validation.<br>
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_developer_embed_code (1).webp" alt="Add Form Guard snippet to &#x22;Developer Code(Advanced)&#x22; section for New HubSpot Forms" width="563"><figcaption></figcaption></figure></div>
-
 {% hint style="info" %}
-#### **Still using the older HubSpot Embedded Forms (V3)?**
+**Still using the older HubSpot Embedded Forms (V3)?**
 
-**Integrating Clearout with HubSpot Embed Forms (V3)** is quick and straightforward. Simply paste the Clearout Form Guard code into the header section of the web page where your HubSpot form is embedded. No additional code customization is needed. All validation settings can be easily configured on the Clearout [Form Guard](/broken/pages/rXGOw2nHnrFS098BfLhM)'s page.&#x20;
+**Integrating Clearout with HubSpot Embed Forms (V3)** is quick and straightforward. Simply paste the Clearout Form Guard code into the header section of the web page where your HubSpot form is embedded. No additional code customization is needed. All validation settings can be easily configured on the Clearout [Form Guard](/broken/pages/rXGOw2nHnrFS098BfLhM)'s page.
 {% endhint %}
 
 For best results, we recommend placing the **Clearout Form Guard script** in the header of your page.
@@ -72,28 +70,20 @@ Go to your [GTM dashboard](https://tagmanager.google.com/#/home)
 
 {% step %}
 Create a New Tag
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/co_create_new_tag_gtm.webp" alt="Site-wide Integration of Form Guard with Google Tag Manager"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Choose Tag Type as Custom HTML and Name the tag (eg, Clearout Form Guard)
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/clearout_choose_tag_type_gtm.webp" alt="Choose tag type as &#x22;Custom HTML&#x22;"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Paste the entire Clearout’s Form Guard Snippet into the HTML box
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/paste_co_fg_snippet_gtm.webp" alt="Add Form Guard Snippet in the &#x22;custom HTML&#x22;"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Choose when the Form Guard script is to be triggered (for example, All Pages). By default, Google Tag Manager is configured to trigger on all pages.
 
 If you want more control over where Form Guard loads, you can customize this trigger to limit execution to specific pages or conditions.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/clearout_choose_a_trigger_gtm (1).webp" alt="Choose the trigger to Run Form Guard"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}

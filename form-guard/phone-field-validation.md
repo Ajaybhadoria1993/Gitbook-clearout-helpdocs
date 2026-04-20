@@ -7,13 +7,11 @@ icon: phone
 
 The Form Guard provides a **flexible and powerful phone validation component** that allows you to configure how Clearout should validate phone numbers based on your specific requirements. This section covers
 
-## Phone Field Setting Options&#x20;
+## Phone Field Setting Options
 
 The Guard creation or custom code can set the phone field options below.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/phone_validation_clearout_formguard.webp" alt="select and customize phone validation settings for Phone Field"><figcaption><p>Customize how phone numbers are validated on your forms.</p></figcaption></figure></div>
-
-### Acceptable Values&#x20;
+### Acceptable Values
 
 * **Accept any Valid phone number (default)**: Allows any valid phone number with a valid format
 * **Accept only Mobile phone numbers**: Allows only valid mobile phone numbers with a valid format.
@@ -27,16 +25,14 @@ The Guard creation or custom code can set the phone field options below.
   * **Block form submission on timeout**: Block form submission if the phone validation request times out
   * **Block form submission on usage limit crossed**: Block form submission when the phone validation usage limit is exceeded.
 
-### Feedback Messages&#x20;
+### Feedback Messages
 
 This option allows you to customize the feedback (error) messages displayed on forms when an invalid or unacceptable value is entered in the phone field.
 
 * **Default**: A predefined set of feedback messages automatically set by the Form Guard.
 * **Custom**: Displays all possible feedback message variations for the phone field (refer to the image below), with their default values shown as placeholder text in the input field.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/image (33).png" alt="Customize feedback message for Phone validation" width="563"><figcaption></figcaption></figure></div>
-
-## Hooks&#x20;
+## Hooks
 
 This option allows you to define custom JavaScript functions that execute either before or after Clearout's form validation.
 
@@ -86,7 +82,7 @@ on_after_verify: function({ phone, $form, result }) {
 }
 ```
 
-## Field Selection&#x20;
+## Field Selection
 
 This option lets you choose whether Clearout's Form Guard should automatically detect and attach validation to phone fields or apply validation only to specific fields of your choice.
 
@@ -96,7 +92,7 @@ By default, the **Automatic** mode is enabled, allowing Clearout to identify for
 * Element's name is equal to any one of **clearout-phone, mobile, phone, telephone, mobilephone**
 * Element has attribute **data-clearout-phone-field**
 
-## Allowed Countries&#x20;
+## Allowed Countries
 
 Option to accept phone numbers from certain countries only.
 
@@ -105,14 +101,14 @@ All countries are enabled by default, but you can limit this to specific ones if
 * **All**: Accept phone numbers from every country.
 * **Custom**: Accept phone numbers only from the countries you select. You may choose one or multiple options.
 
-## Prefill Dial Code&#x20;
+## Prefill Dial Code
 
 This option automatically inserts the appropriate dial code (e.g., +1) into the phone number field based on the visitor’s location.
 
 * **Yes**: Automatically prefill the dial code using the visitor’s location.
 * **No**: Do not prefill the dial code.
 
-## Optional Fields&#x20;
+## Optional Fields
 
 In case the phone input field is set as optional, without requiring the visitor to fill it, then you can set this option to <mark style="color:$info;">**"Yes."**</mark>
 
@@ -121,6 +117,6 @@ In case the phone input field is set as optional, without requiring the visitor 
 * **If the field is left empty:** The form submission will proceed without validation for that field.
 * **If the field is filled**: Even though it's optional, the entered value will be validated. The form will only be allowed to submit if the value passes validation based on your configured criteria.
 
-## Testing&#x20;
+## Testing
 
 For testing purposes, you can use the [test phone numbers](https://clearoutphone.io/supported-countries/) to verify different validation scenarios without incurring any credit cost. For more details about supported countries and phone number formats, please refer to our [Supported Countries](https://clearoutphone.io/supported-countries/) page.

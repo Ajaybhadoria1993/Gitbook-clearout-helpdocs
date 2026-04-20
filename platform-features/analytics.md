@@ -14,8 +14,6 @@ The **Analytics page gives** you a clear view of how your team is using Clearout
 * Usage broken down by team members or organizations (for Team Accounts).
 * Downloadable reports for further analysis or sharing with stakeholders.​
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/clearout-analytics-overview.png" alt="Overview of Clearout Analytics showcasing Total usage across various tools and products performed in a selected date range" width="563"><figcaption></figcaption></figure></div>
-
 ### How to view and download analytics
 
 1. Log in to your Clearout account.

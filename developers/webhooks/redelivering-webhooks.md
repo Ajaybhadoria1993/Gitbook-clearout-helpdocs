@@ -2,7 +2,7 @@
 
 This guide explains **Clearout's webhook retry logic and redelivery system**. When webhook deliveries fail, Clearout automatically retries with exponential backoff to ensure reliable delivery of your webhook events.
 
-### Retry Overview&#x20;
+### Retry Overview
 
 Clearout automatically retries failed webhook deliveries to ensure your application receives important event notifications. The retry system uses exponential backoff to handle temporary failures while avoiding overwhelming your server.
 
@@ -23,7 +23,7 @@ The number of retry attempts depends on your account type
 
 Each webhook request has a maximum timeout of 30 seconds. If your endpoint doesn't respond within this time, the request will be considered failed and retried.
 
-### Retry Schedule&#x20;
+### Retry Schedule
 
 Clearout uses exponential backoff for webhook retries, with delays that increase after each failed attempt:
 
@@ -43,7 +43,7 @@ Clearout uses exponential backoff for webhook retries, with delays that increase
 
 The retry delays approximately double with each attempt, providing time for temporary issues to resolve while preventing overloading your server with rapid retries.
 
-### Failure Handling&#x20;
+### Failure Handling
 
 When all retry attempts are exhausted, the webhook delivery is permanently marked as failed:
 
@@ -57,7 +57,7 @@ When all retry attempts are exhausted, the webhook delivery is permanently marke
 
 Manual retry functionality is not currently available. Once a webhook delivery is permanently failed, it cannot be manually retriggered through the dashboard.
 
-### Monitoring&#x20;
+### Monitoring
 
 You can monitor webhook delivery status through the Clearout dashboard:
 
@@ -72,8 +72,6 @@ You can monitor webhook delivery status through the Clearout dashboard:
 
 Click on any event in the logs to view detailed information including delivery status, response details, and the complete JSON payload.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/webhook-event-details (1).png" alt="Webhook Event Details Panel"><figcaption><p>Event details panel showing delivery status, response information, and JSON payload</p></figcaption></figure></div>
-
 #### Monitoring Recommendations <a href="#monitoring-recommendations" id="monitoring-recommendations"></a>
 
 * **Regular Checks** - Monitor your webhook delivery logs regularly for failed deliveries
@@ -81,7 +79,7 @@ Click on any event in the logs to view detailed information including delivery s
 * **Alert Setup** - Consider setting up external monitoring for your webhook endpoints
 * **Performance Monitoring** - Monitor response times to identify performance issues
 
-### Best Practices&#x20;
+### Best Practices
 
 #### Webhook Endpoint Reliability <a href="#webhook-endpoint-reliability" id="webhook-endpoint-reliability"></a>
 

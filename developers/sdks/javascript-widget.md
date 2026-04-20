@@ -12,13 +12,11 @@ The Clearout JavaScript Widget comes in handy for non-developers to easily integ
 <mark style="color:red;">The JavaScript Widget is no longer supported</mark>. We recommend using [Form Guard](/broken/pages/rXGOw2nHnrFS098BfLhM) for best features and support
 {% endhint %}
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/jswidget.png" alt="SDK for Email Verification "><figcaption></figcaption></figure></div>
-
 ## JavaScript Widget 2.0 - Live Demos
 
 **Clearout** **JavaScript widget** comes as a simple way to bring real-time email address verification to any online forms that capture the email addresses. The widget can be configured to handle what kind of email address is to be considered valid. Below page link shows how the Clearout JavaScript widget has enhanced the **HubSpot, Unbounce, and LeadPages** forms to capture only the leads with the valid email address
 
-<table><thead><tr><th width="369.69921875">Form Provider + JavaScript Widget 2.0</th><th>Live Demo Page</th><th data-hidden></th></tr></thead><tbody><tr><td>HubSpot </td><td><a href="https://clearout.io/formguard/v2/demos/hubspot.html">Try it</a></td><td>HubSpot</td></tr><tr><td>Unbounce </td><td><a href="https://clearout.io/formguard/v2/demos/unbounce.html">Try it</a></td><td>Unbounce</td></tr><tr><td>Lead Pages </td><td><a href="https://clearout.io/formguard/v2/demos/leadpages.html">Try it</a></td><td>Lead Pages</td></tr></tbody></table>
+<table><thead><tr><th width="369.69921875">Form Provider + JavaScript Widget 2.0</th><th>Live Demo Page</th><th data-hidden></th></tr></thead><tbody><tr><td>HubSpot</td><td><a href="https://clearout.io/formguard/v2/demos/hubspot.html">Try it</a></td><td>HubSpot</td></tr><tr><td>Unbounce</td><td><a href="https://clearout.io/formguard/v2/demos/unbounce.html">Try it</a></td><td>Unbounce</td></tr><tr><td>Lead Pages</td><td><a href="https://clearout.io/formguard/v2/demos/leadpages.html">Try it</a></td><td>Lead Pages</td></tr></tbody></table>
 
 ## Getting Started with JavaScript Widget
 
@@ -28,25 +26,19 @@ Create your JavaScript widget from the Apps page by clicking on 'Create App' and
 The app screenshots illustrated on this page may be irrelevant due to the fact that the JavaScript Widget has been deprecated and is no longer supported.
 {% endhint %}
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/client-app.png" alt=""><figcaption></figcaption></figure></div>
-
 ## Security Configuration:
 
 {% stepper %}
 {% step %}
-### Limit Usage:
+#### Limit Usage:
 
 You can take full control in avoiding abuse by limiting the usage by applying a rate limit on IP addresses. This will further help in using the credits effectively. It is always advisable to specify a rate limit either at a global level or at a minute interval. Failing to do so might deplete the credit balance sooner. There will be no limits applied by default.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/client-app-limit-usage.png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Add URLs:
+#### Add URLs:
 
 You can prevent abuse by adding URLs that restrict where email verification is permitted on the website. By the way, URLs can contain wildcards to specify whether verification should be performed on the entire website or a subset of websites, as shown in the image below.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/client-app-url-setting.png" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
@@ -352,8 +344,6 @@ Google reCAPTCHA (v3) helps to prevent hackers from abusing the system, as it bl
 
 So, a captcha with real-time email validation would generate genuine leads. To enable Google reCAPTCHA (v3), you need to generate a site key and a secret key from [Google](https://developers.google.com/recaptcha/docs/v3)
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/recaptcha.png" alt=""><figcaption></figcaption></figure></div>
-
 ## Adding Email Validation to a Specific Form
 
 In case a page has many forms, and you are looking to enable Clearout email validation to a specific form, then it requires passing the form element as part of the initialization, as mentioned below
@@ -361,8 +351,6 @@ In case a page has many forms, and you are looking to enable Clearout email vali
 {% stepper %}
 {% step %}
 Find the form element for which the Clearout email validation needs to be added
-
-
 {% endstep %}
 
 {% step %}
@@ -441,7 +429,7 @@ In case the form on the page is set to be rendered dynamically, then wait for th
 </html>
 ```
 
-## Email Validation on Popup Forms during Form Submission&#x20;
+## Email Validation on Popup Forms during Form Submission
 
 Most pop-up form providers will render the form dynamically, and even the form submit button would be a custom button created using the \<DIV> tag.
 
@@ -531,9 +519,7 @@ clearout.push(["initialize", opts]);
 
 > <mark style="color:$info;">**Note**</mark>**:** Please contact us@clearout.io, if none of the above methods help you integrate Clearout email validation on the form
 
-
-
-## Integrate custom email validation using the verify() method.&#x20;
+## Integrate custom email validation using the verify() method.
 
 Use the **clearout.emailValidator.verify()** method at your disposal in situations where you need to implement your own form validation with Clearout's real-time email validation for the email field. To find out more about the integration, please take a look at the code example below.
 
@@ -611,19 +597,13 @@ Check out the code snippet and screenshot below to see how the feedback message 
 </script>
 ```
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/custom-message-form.jpg" alt="Email Validation on Forms"><figcaption></figcaption></figure></div>
-
 ## Activate/Deactivate the apps:
 
 If you want to disable any app temporarily, you can click on the toggle button against the app under the status column. Verification will not be carried out as long as the status of the app remains 'Inactive.' You can resume the verification by turning the toggle to an active state.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/s-5.png" alt="Activating/Deactivating Javascript Widget"><figcaption></figcaption></figure></div>
-
 ## Deleting the unused/old apps:
 
 Any unused app can be deleted by clicking the delete icon against the app. On hovering over the app name, the Delete(Bin Icon) option will be visible.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/s-6.png" alt=""><figcaption></figcaption></figure></div>
 
 ## Reset/Regenerate the Token:
 
@@ -631,7 +611,5 @@ Whenever an abuse is identified while you are still in control of the usage, you
 
 * Deactivating the existing token in use. The token will expire immediately (in case of abuse is identified)
 * Keep the already active token working for an hour post-resetting (which might be helpful in case of migrating to a newer setup). Once the first hour completes, the old token will not work.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/reset-token.png" alt=""><figcaption></figcaption></figure></div>
 
 It is always advisable to choose 'Expire Immediately' if any sort of abuse is identified. On successful resetting of the token, make sure to update the form code with the new token.

@@ -1,34 +1,28 @@
 # Skylead
 
-This Clearout integration of **email verification with Skylead helps ensure that invalid and fake email addresses are blocked** before they get added to the Campaign list.&#x20;
+This Clearout integration of **email verification with Skylead helps ensure that invalid and fake email addresses are blocked** before they get added to the Campaign list.
 
 Before diving into the setup instructions, watch the flow below to understand how the integration works from start to finish. This will make it easier for you to follow along and get started within minutes.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/simple_steps_to_validate_shylead_campaign.webp" alt="Simple steps to validated Skylead list with Clearout"><figcaption></figcaption></figure></div>
-
 {% stepper %}
 {% step %}
-### Connect account
+#### Connect account
 
 * **Log in** to your Clearout account.
 * Go to **Integrations** → Skylead → Connect.
 * Enter your **Skylead API key** (found in Skylead **→** Accounts **→** Account Settings **→** Your API Key) to **authorize the connection**.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/connect_account_skylead.webp" alt="Connect Skylead account with Clearout for List verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Select Campaign List
+#### Select Campaign List
 
 After connecting, your Skylead **campaign lists** will appear automatically in Clearout. **Select the campaign list(s)** you wish to validate.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/select_campaign_list_skylead.webp" alt="Select Skylead campaign list start verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Verify Your List
+#### Verify Your List
 
-Click "**Verify**" to start real-time validation. \
+Click "**Verify**" to start real-time validation.\
 \
 Clearout runs 20+ advanced checks to identify:
 
@@ -37,20 +31,16 @@ Clearout runs 20+ advanced checks to identify:
 * Bot or fake submissions
 * Duplicate entries
 * Invalid formats
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/verify_your_list_skylead.webp" alt="Start Skylead campaign list verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Export and Append validated results
+#### Export and Append validated results
 
 Once validation is complete:
 
 * **Download** the cleaned list in .CSV / .XLSX format
 * Or **Export results** back to Skylead with a click
 * You can **choose the columns** to be appended to your Skylead campaign list when exporting.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/export_or_sync_results_skylead.webp" alt="export verified list results to Skylead"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
@@ -119,4 +109,3 @@ Clearout offers up to 99% accuracy in detecting invalid, risky, disposable, or a
 Yes, Clearout processes your data securely and complies with data protection regulations.
 
 </details>
-

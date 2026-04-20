@@ -7,8 +7,6 @@ icon: badge
 
 The **My Account** area is where you manage your **personal details, subscription, billing, security, and account lifecycle** for your Clearout workspace.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/Screenshot-from-2026-02-10-21-45-32-png-1598×898--02-10-2026_09_47_PM.png" alt="Overview of My Account Details"><figcaption></figcaption></figure></div>
-
 ### Profile
 
 Use the [**My Account → Profile**](https://app.clearout.io/account/profile) section to keep your personal and company information accurate. You can update your name, primary email address, and company details so notifications and invoices always show the correct information

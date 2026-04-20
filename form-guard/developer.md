@@ -9,19 +9,17 @@ While the Form Guard is designed for easy use requiring only a simple copy-paste
 
 > **Note:** Writing incomplete or syntactically incorrect code can break Clearout's Form Guard functionality on your forms. Always test custom scripts thoroughly in a **sandbox environment** before deploying them to production.
 
-## Getting Started with the Basics&#x20;
+## Getting Started with the Basics
 
-**How to ensure the Clearout's JS has loaded correctly on the page?**&#x20;
+**How to ensure the Clearout's JS has loaded correctly on the page?**
 
 Once you've added Clearout's JS code to your page, **refresh the page** and **open the browser** console.
 
 You should see the below-mentioned log message indicating that **Clearout's SDK has been successfully initialized along with the version.**
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/formguard developer-cropped.png" alt="Console log showing Clearout SDK initialization" width="563"><figcaption></figcaption></figure></div>
-
 This log ensures that the Form Guard is active and ready to perform validations on your page.
 
-### Enabling debug mode & inspect options&#x20;
+### Enabling debug mode & inspect options
 
 Enabling **Debug Mode** provides detailed and descriptive logs in the browser console. These logs include insights such as
 
@@ -45,9 +43,9 @@ To enable debug mode, you can override the options in your JavaScript code:
 
 > **Note:** Debug mode should only be enabled in development environments as it may impact performance and expose sensitive information.
 
-## Basic Configuration&#x20;
+## Basic Configuration
 
-### Overriding Options&#x20;
+### Overriding Options
 
 In Clearout's Form Guard, settings are managed through the Clearout Dashboard. However, you can override these settings on the client side if needed. For example:
 
@@ -65,7 +63,7 @@ In Clearout's Form Guard, settings are managed through the Clearout Dashboard. H
 
 This will force the Form Guard to use FormSubmit mode and block free email accounts, regardless of the dashboard settings.
 
-### **Custom Form Selection**&#x20;
+### **Custom Form Selection**
 
 The **window.clearout.options.form\_elements** option allows you to specify which form elements on the page require validation. This is particularly useful for div-based or non-standard forms or custom form implementations.
 
@@ -77,7 +75,7 @@ window.clearout.options.form_elements = [
 ];
 ```
 
-### **Pre-filled Value Validation**&#x20;
+### **Pre-filled Value Validation**
 
 The **window.clearout.options.prefill\_validation** option enables validation of pre-filled values in form fields. This is useful when forms are pre-populated with data and you want to validate these values immediately.
 
@@ -85,7 +83,7 @@ The **window.clearout.options.prefill\_validation** option enables validation of
 window.clearout.options.prefill_validation = true;
 ```
 
-### **Built-in Error Message Suppression**&#x20;
+### **Built-in Error Message Suppression**
 
 The **window.clearout.options.suppress\_form\_builtin\_error\_message\_selector** option allows you to specify selectors for form elements whose built-in error messages should be suppressed. This helps prevent duplicate error messages when using Clearout's validation.
 
@@ -93,7 +91,7 @@ The **window.clearout.options.suppress\_form\_builtin\_error\_message\_selector*
 window.clearout.options.suppress_form_builtin_error_message_selector = '.form-error-message, .validation-message';
 ```
 
-### **Phone Field Overlay**&#x20;
+### **Phone Field Overlay**
 
 The **window.clearout.options.phone.overlay** option enables Clearout to create an enriched phone UI component over your form's existing phone field. This provides enhanced validation and formatting capabilities.
 
@@ -101,7 +99,7 @@ The **window.clearout.options.phone.overlay** option enables Clearout to create 
 window.clearout.options.phone.overlay = true;
 ```
 
-### **Form Discovery**&#x20;
+### **Form Discovery**
 
 The form discovery options allow you to configure the duration and interval for form discovery. This is useful when you have forms that are dynamically loaded on the page.
 
@@ -110,7 +108,7 @@ window.clearout.options.form_discovery_duration = 15000; // Max allowed time in 
 window.clearout.options.form_discovery_interval = 500; // Interval time in milliseconds between form discovery attempts
 ```
 
-## Disabling Validation on Particular Fields&#x20;
+## Disabling Validation on Particular Fields
 
 In some cases, you may want to exclude certain fields from Clearout's validation. This is particularly useful when you have duplicate fields (like email and confirm email) where validating both fields would be redundant.
 
@@ -131,13 +129,13 @@ To disable validation on a specific field, simply add the **data-clearout-valida
 * Fields that are handled by other validation systems
 * Fields that are temporarily disabled or read-only
 
-## Disabling Validation on Particular Form&#x20;
+## Disabling Validation on Particular Form
 
-In some cases, you may want to exclude validation for a specific form on the page.&#x20;
+In some cases, you may want to exclude validation for a specific form on the page.
 
 To disable validation on a specific form, simply add the **data-clearout-form-identifier=false** attribute to the \<FORM/> element. The Form Guard will automatically ignore the form with this attribute.
 
-## Available Options&#x20;
+## Available Options
 
 Here are all the configurable options available in the Clearout FormGuard:
 
@@ -269,7 +267,7 @@ Search:
 
 <table><thead><tr><th width="101.7890625">Field</th><th width="184.03515625">Setting</th><th width="114.046875">Type</th><th width="127.8515625">Default Value</th><th>Description</th></tr></thead><tbody><tr><td>email</td><td>block_catchall_status</td><td>Boolean</td><td>false</td><td>Boolean to block form submission for emails with a catch-all status, where the mailbox accepts all addresses regardless of validity.</td></tr><tr><td>email</td><td>block_disposable_account</td><td>Boolean</td><td>true</td><td>Boolean to block form submission if the email is from a disposable or temporary email provider</td></tr><tr><td>email</td><td>block_form_submission_on_limit_crossed</td><td>Boolean</td><td>false</td><td>Boolean to block form submission when your app’s email validation usage limit has been exceeded.</td></tr><tr><td>email</td><td>block_form_submission_on_timeout</td><td>Boolean</td><td>false</td><td>Boolean to block form submission if the email validation request times out</td></tr><tr><td>email</td><td>block_free_account</td><td>Boolean</td><td>false</td><td>Boolean to block form submission for emails from free providers like Gmail, Yahoo, or Outlook.</td></tr><tr><td>email</td><td>block_gibberish_account</td><td>Boolean</td><td>false</td><td>Boolean to block emails identified as gibberish or invalid, preventing submission of nonsensical or fabricated addresses.</td></tr><tr><td>email</td><td>block_role_account</td><td>Boolean</td><td>false</td><td>Boolean to prevent form submission if the email is a role-based address (e.g., admin@, support@, info@)</td></tr><tr><td>email</td><td>block_unknown_status</td><td>Boolean</td><td>false</td><td>Boolean to block form submission if the email status couldn't be determined by Clearout</td></tr><tr><td>email</td><td>elements</td><td>Array</td><td>null</td><td>Allows you to specify an array of email validation configurations, each with a corresponding jQuery selector. This is particularly useful when you have multiple email fields on a page that require different validation rules. Each item in the array defines the selector for the input field and the specific validation settings to apply.</td></tr><tr><td>email</td><td>enabled</td><td>Boolean</td><td>true</td><td>Boolean to enable or disable email validation for the form</td></tr><tr><td>email</td><td>feedback</td><td>Boolean</td><td>true</td><td></td></tr><tr><td>email</td><td>feedback_catchall_message</td><td>HTML String</td><td>catch all email not acceptable, please enter a different email address</td><td>Option to provide a custom HTML string to be displayed when email status is catchall</td></tr><tr><td>email</td><td>feedback_disposable_account_message</td><td>HTML String</td><td>invalid - disposable account not allowed</td><td>Option to provide a custom HTML string to be displayed when disposable account is detected</td></tr><tr><td>email</td><td>feedback_free_account_message</td><td>HTML String</td><td>invalid - role account not allowed</td><td>Option to provide a custom HTML string to be displayed when free account is detected</td></tr><tr><td>email</td><td>feedback_gibberish_message</td><td>HTML String</td><td>invalid - gibberish email address not allowed</td><td>Option to provide a custom HTML string to be displayed when its a classified as a gibberish email</td></tr><tr><td>email</td><td>feedback_invalid_classname</td><td>String</td><td>co-error-msg</td><td>Option to add a custom CSS class to Clearout’s feedback HTML container for styling purposes.</td></tr><tr><td>email</td><td>feedback_invalid_message</td><td>HTML String</td><td>invalid email address</td><td>Option to provide a custom HTML string displayed when an invalid email is detected.</td></tr><tr><td>email</td><td>feedback_on_timeout_message</td><td>HTML String</td><td>email could not be verified - timeout occurred</td><td>Option to provide a custom HTML string to be displayed when validation timeout occurs</td></tr><tr><td>email</td><td>feedback_on_usage_limit_crossed_message</td><td>HTML String</td><td>unable to verify the email address, usage limit crossed</td><td>Option to provide a custom HTML string to be displayed when usage limit has crossed on your app</td></tr><tr><td>email</td><td>feedback_role_account_message</td><td>HTML String</td><td>invalid - role account not allowed</td><td>Option to provide a custom HTML string to be displayed when role account is detected</td></tr><tr><td>email</td><td>feedback_safe_to_send_only_message</td><td>HTML String</td><td>please enter different email, entered email is not safe</td><td>Option to provide a custom HTML string to be displayed when the email is not Safe to Send</td></tr><tr><td>email</td><td>feedback_unknown_message</td><td>HTML String</td><td>unable to verify the email address, try after sometime</td><td>Option to provide a custom HTML string to be displayed when unknown email is detected</td></tr><tr><td>email</td><td>on_after_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately after Clearout’s validation completes, useful for handling post-validation actions.</td></tr><tr><td>email</td><td>on_before_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately before Clearout’s validation starts, useful for performing pre-validation logic.</td></tr><tr><td>email</td><td>optional</td><td>Boolean</td><td>false</td><td>Boolean indicating if the email field is optional; when true, empty values are accepted and skipped during validation.</td></tr><tr><td>email</td><td>safe_to_send_only</td><td>Boolean</td><td>false</td><td>A super status option that allows only emails classified as “safe to send.” This is the strictest setting and overrides all other block rules.</td></tr><tr><td>email</td><td>selector</td><td>jQuery selector</td><td>null</td><td>Option to specify a jQuery selector to attach Clearout’s validation. Only needed if Clearout is unable to automatically detect the email field. This explicitly sets the target for validation when automatic detection fails.</td></tr><tr><td>email</td><td>suggest_email</td><td>Boolean</td><td>true</td><td>Boolean to enable displaying suggested corrections for common email typos as an error message.</td></tr><tr><td>email</td><td>suggest_email_message_template</td><td>HTML String</td><td>did you mean __suggested_email_address__?</td><td>Option to provide a custom HTML string for displaying suggested email corrections, where a placeholder is replaced with the suggested email address.</td></tr><tr><td>form</td><td>auto_discovery</td><td>Boolean</td><td>true</td><td>Enables or disables automatic detection and attachment of validation widgets to forms present on the page. When set to true, the widget will scan the DOM and initialize validation on all eligible forms automatically.</td></tr><tr><td>form</td><td>bot_detection</td><td>Object</td><td>bot_detection: { enabled: false, provider: null, data: null }</td><td>Enable bot protection for form submissions. Use Form Guard's automatic detection or an external provider such as Google reCaptcha v3.</td></tr><tr><td>form</td><td>debug</td><td>Boolean</td><td>false</td><td>Enables the generation of debug logs in the browser console. Useful for troubleshooting and monitoring validation behavior during development.</td></tr><tr><td>form</td><td>feedback_cloudflare_turnstile</td><td>HTML String</td><td>bot validation failed, please refresh the page</td><td>Specifies the error message displayed when Clearout Bot validation fails</td></tr><tr><td>form</td><td>feedback_google_recaptcha</td><td>HTML String</td><td>google recaptcha verification failed</td><td>Specifies the error message displayed when Google reCAPTCHA validation fails</td></tr><tr><td>form</td><td>form_discovery_duration</td><td>Number</td><td>15000</td><td>Specifies the maximum duration (in milliseconds) allowed for scanning the page to discover and attach validation to forms. Set to -1 to enable unlimited scanning time. -1 for infinite</td></tr><tr><td>form</td><td>form_discovery_interval</td><td>Number</td><td>500</td><td>Defines the time interval (in milliseconds) between consecutive scans of the page for form discovery and attachment.</td></tr><tr><td>form</td><td>form_elements</td><td>Array</td><td>null</td><td>Allows manual specification of one or more form elements to which the validation widget should be attached. This is especially useful for non-standard forms, such as those constructed with &#x3C;div> containers instead of &#x3C;form> tags. Additionally, this option supports applying different validation settings to multiple forms on the same page by associating each form element with its own configuration.</td></tr><tr><td>form</td><td>inspect</td><td>Boolean</td><td>false</td><td>options to allow visual highlighting of input fields that have validation rules attached</td></tr><tr><td>form</td><td>mode</td><td>String</td><td>ajax</td><td>Defines the validation trigger mode. By default, validation is performed when an input field loses focus (onBlur). Setting this to formSubmit will defer validation until the form's submit button is clicked, at which point all eligible fields will be validated. ajax formSubmit</td></tr><tr><td>form</td><td>on_ready</td><td>Function</td><td>null</td><td>Defines a callback function to be executed once the widget has fully loaded and is ready on the page. Use this to perform any initialization or custom logic after the widget becomes available. function() {}</td></tr><tr><td>form</td><td>prefill_validation</td><td>Boolean</td><td>false</td><td>Determines whether validation should be performed on pre-filled form fields when the widget initializes. When enabled, existing input values are validated immediately upon page load.</td></tr><tr><td>form</td><td>submit_button_cursor_style</td><td>String</td><td>pointer</td><td>Specifies the CSS cursor style to apply to the submit button. If not provided, the widget will inherit the cursor style defined by the form's existing styles.</td></tr><tr><td>form</td><td>submit_button_selector</td><td>jQuery selector</td><td>null</td><td>Specifies a jQuery selector for the form’s submit button. This is useful in cases where the widget cannot automatically identify the correct submit button.</td></tr><tr><td>form</td><td>suppress_form_builtin_error_message_selector</td><td>jQuery selector</td><td>null</td><td>option to supress form's built in error msg (used in hs)</td></tr><tr><td>form</td><td>timeout</td><td>Number</td><td>10</td><td>Specifies the maximum duration (in seconds) allowed for validation to complete. If validation exceeds this time limit, the entry will be permitted by default—unless the block_on_timeout setting is enabled. Max 180</td></tr><tr><td>form</td><td>trigger_form_discovery_on_event</td><td>String</td><td>null</td><td>event to listen to before loading the SDKSpecifies the name of an event to listen for before initiating form discovery on the page. Form scanning and validation attachment will start only after this event is triggered.</td></tr><tr><td>name</td><td>block_form_submission_on_limit_crossed</td><td>Boolean</td><td>false</td><td>Boolean to block form submission when your app’s email validation usage limit has been exceeded.</td></tr><tr><td>name</td><td>block_form_submission_on_timeout</td><td>Boolean</td><td>false</td><td>Boolean to block form submission if the email validation request times out</td></tr><tr><td>name</td><td>block_gibberish_name</td><td>Boolean</td><td>true</td><td>Boolean to allow or block names classified as gibberish by Clearout.</td></tr><tr><td>name</td><td>block_profanity_words</td><td>Boolean</td><td>true</td><td>Boolean to allow or block names containing words of profanity</td></tr><tr><td>name</td><td>elements</td><td>Array</td><td>null</td><td>Allows you to specify an array of name validation configurations, each with a corresponding jQuery selector. This is especially useful when multiple name fields on a form require different validation rules. Each item in the array defines the selector for the input field and the specific validation settings to apply.</td></tr><tr><td>name</td><td>enabled</td><td>Boolean</td><td>false</td><td>Boolean to enable or disable name validation for the form</td></tr><tr><td>name</td><td>feedback</td><td>Boolean</td><td>true</td><td></td></tr><tr><td>name</td><td>feedback_gibberish_message</td><td>HTML String</td><td>invalid - gibberish name not allowed</td><td>Option to provide a custom HTML string displayed when an gibberish name is detected.</td></tr><tr><td>name</td><td>feedback_profanity_message</td><td>HTML String</td><td>Invalid - Profanity words are not allowed</td><td>Option to provide a custom HTML string displayed when a profanity word is detected</td></tr><tr><td>name</td><td>feedback_invalid_classname</td><td>HTML String</td><td>co-name-error-msg</td><td>Option to add a custom CSS class to Clearout’s feedback HTML container for styling purposes.</td></tr><tr><td>name</td><td>feedback_invalid_message</td><td>HTML String</td><td>invalid name</td><td>Option to provide a custom HTML string displayed when an invalid name is detected.</td></tr><tr><td>name</td><td>feedback_on_timeout_message</td><td>HTML String</td><td>name could not be verified - timeout occurred</td><td>Option to provide a custom HTML string to be displayed when validation timeout occurs</td></tr><tr><td>name</td><td>feedback_on_usage_limit_crossed_message</td><td>HTML String</td><td>unable to verify the name, usage limit crossed</td><td>Option to provide a custom HTML string to be displayed when usage limit has crossed on your app</td></tr><tr><td>name</td><td>gibberish_threshold</td><td>String</td><td>high</td><td>Defines the strictness level for gibberish detection, allowing adjustment of how aggressively invalid or nonsensical names are filtered.</td></tr><tr><td>name</td><td>on_after_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately after Clearout’s validation completes, useful for handling post-validation actions.</td></tr><tr><td>name</td><td>on_before_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately before Clearout’s validation starts, useful for performing pre-validation logic.</td></tr><tr><td>name</td><td>optional</td><td>Boolean</td><td>false</td><td>Boolean indicating if the email field is optional; when true, empty values are accepted and skipped during validation.</td></tr><tr><td>name</td><td>selector</td><td>jQuery selector</td><td>null</td><td>Option to specify a jQuery selector to attach Clearout’s validation. Only needed if Clearout is unable to automatically detect the name field. This explicitly sets the target for validation when automatic detection fails.</td></tr><tr><td>phone</td><td>allowed_countries</td><td>Array</td><td>[]</td><td>Option to accept phone numbers from certain countries only.</td></tr><tr><td>phone</td><td>block_form_submission_on_limit_crossed</td><td>Boolean</td><td>false</td><td>Boolean to block form submission when your app’s email validation usage limit has been exceeded.</td></tr><tr><td>phone</td><td>block_form_submission_on_timeout</td><td>Boolean</td><td>false</td><td>Boolean to block form submission if the email validation request times out</td></tr><tr><td>phone</td><td>block_landline_numbers</td><td>Boolean</td><td>false</td><td>Boolean to block landline phone numbers from being submitted through the form.</td></tr><tr><td>phone</td><td>block_mobile_numbers</td><td>Boolean</td><td>false</td><td>Boolean to block landline mobilenumbers from being submitted through the form.</td></tr><tr><td>phone</td><td>block_toll_free_numbers</td><td>Boolean</td><td>false</td><td>Boolean to block toll-freephone numbers from being submitted through the form.</td></tr><tr><td>phone</td><td>block_unknown_type</td><td>Boolean</td><td>false</td><td>Boolean to block unknown phone numbers from being submitted through the form.</td></tr><tr><td>phone</td><td>block_voip_numbers</td><td>Boolean</td><td>false</td><td>Boolean to block voip phone numbers from being submitted through the form.</td></tr><tr><td>phone</td><td>elements</td><td>Array</td><td>null</td><td>Allows you to specify an array of phone validation configurations, each with a corresponding jQuery selector. This is especially useful when multiple phone fields on a form require different validation rules. Each item in the array defines the selector for the input field and the specific validation settings to apply.</td></tr><tr><td>phone</td><td>enabled</td><td>Boolean</td><td>false</td><td>Boolean to enable or disable phone validation for the form</td></tr><tr><td>phone</td><td>feedback</td><td>Boolean</td><td>true</td><td></td></tr><tr><td>phone</td><td>feedback_invalid_classname</td><td>String</td><td>co-phone-error-msg</td><td>Option to add a custom CSS class to Clearout’s feedback HTML container for styling purposes.</td></tr><tr><td>phone</td><td>feedback_invalid_message</td><td>HTML String</td><td>invalid phone number</td><td>Option to provide a custom HTML string displayed when an invalid phone is detected.</td></tr><tr><td>phone</td><td>feedback_landline_message</td><td>HTML String</td><td>invalid - landline numbers not allowed</td><td>Option to provide a custom HTML string displayed when a landline phone is detected.</td></tr><tr><td>phone</td><td>feedback_mobile_message</td><td>HTML String</td><td>invalid - mobile numbers not allowed</td><td>Option to provide a custom HTML string displayed when an mobile phone is entered</td></tr><tr><td>phone</td><td>feedback_on_timeout_message</td><td>HTML String</td><td>phone number could not be verified - timeout occurred</td><td>Option to provide a custom HTML string to be displayed when validation timeout occurs</td></tr><tr><td>phone</td><td>feedback_on_usage_limit_crossed_message</td><td>HTML String</td><td>unable to verify the phone number, usage limit crossed</td><td>Option to provide a custom HTML string to be displayed when usage limit has crossed on your app</td></tr><tr><td>phone</td><td>feedback_toll_free_message</td><td>HTML String</td><td>invalid - toll free numbers not allowed</td><td>Option to provide a custom HTML string displayed when an toll-free phone is detected.</td></tr><tr><td>phone</td><td>feedback_unknown_message</td><td>HTML String</td><td>invalid - unknown numbers not allowed</td><td>Option to provide a custom HTML string displayed when phone number's status could not be determined</td></tr><tr><td>phone</td><td>feedback_voip_message</td><td>HTML String</td><td>invalid - voip numbers not allowed</td><td>Option to provide a custom HTML string displayed when an voip phone is detected.</td></tr><tr><td>phone</td><td>on_after_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately after Clearout’s validation completes, useful for handling post-validation actions.</td></tr><tr><td>phone</td><td>on_before_verify</td><td>Function</td><td>null</td><td>Callback function executed immediately before Clearout’s validation starts, useful for performing pre-validation logic.</td></tr><tr><td>phone</td><td>optional</td><td>Boolean</td><td>false</td><td>Boolean indicating if the email field is optional; when true, empty values are accepted and skipped during validation.</td></tr><tr><td>phone</td><td>overlay</td><td>Boolean</td><td>false</td><td>Experimental: Option to enable Clearout’s enriched phone overlay on existing phone input fields with a country code dropdown. Enhances the user experience with formatting and validation support.</td></tr><tr><td>phone</td><td>prefill_dial_code</td><td>Boolean</td><td>false</td><td>Option to automatically add dial code (eg: +1) to phone number based on page visitor's location.</td></tr><tr><td>phone</td><td>selector</td><td>jQuery selector</td><td>null</td><td>Option to specify a jQuery selector to attach Clearout’s validation. Only needed if Clearout is unable to automatically detect the phone field. This explicitly sets the target for validation when automatic detection fails.</td></tr></tbody></table>
 
-## Customizing Styles and CSS&#x20;
+## Customizing Styles and CSS
 
 All UI components created by the **Clearout Form Guard** come with properly **namespaced CSS classes**, making it easy to target and customize their appearance using your own styles.
 
@@ -281,7 +279,7 @@ Below is a list of all elements and their associated class names:
 * **co-feedback-container**: This is the container that contains the feedback elements and is positioned just below the input container.
 * **co-feedback-msg**: This is the container containing the actual feedback message.
 
-## Using the Validators&#x20;
+## Using the Validators
 
 All of Clearout's built-in **validators** are exposed under the global window.clearout object. This allows advanced users to **directly** **access** **and** **invoke** **the** **verify** **method** of each validator, enabling deeper integration or custom validation logic in your application.
 
@@ -300,7 +298,7 @@ console.log('Name Validation Response: ', nameValidationResponse.result)
 
 Using these exposed validation methods, you can verify the data in runtime alongside your client side logics to determine the status of data points at any point in your workflows.
 
-## Using the Form Component&#x20;
+## Using the Form Component
 
 To manually attach the Clearout Form Guard to specific forms using the SDK, you can use the globally available **FormValidator** class. This allows you to create an instance of the widget directly on a jQuery form object, offering precise control over which forms are initialized and how.
 
@@ -310,7 +308,7 @@ You can do this by instantiating **FormValidator** with two parameters: the jQue
 new window.clearout.FormValidator(clearout.$('#testform'), clearout.options)
 ```
 
-## Form Guard Callback Hooks&#x20;
+## Form Guard Callback Hooks
 
 The Clearout Form Guard currently supports three types of callback hooks that allow you to extend and customize the validation process:
 
@@ -323,7 +321,7 @@ The Clearout Form Guard currently supports three types of callback hooks that al
 
 > Note: The <mark style="color:$info;">on\_before\_verify</mark> and <mark style="color:$info;">on\_after\_verify</mark> hooks are field-specific and are individually available for email, phone, and name validations. This allows you to apply fine-grained logic tailored to each input type.
 
-### **on\_ready hook**&#x20;
+### **on\_ready hook**
 
 The on\_ready hook is executed once the Clearout Form Guard SDK has fully loaded and initialized on the page. This hook is particularly useful for running initialization logic that needs to execute once the Form Guard is ready.
 
@@ -335,7 +333,7 @@ The on\_ready hook is executed once the Clearout Form Guard SDK has fully loaded
 
 This callback guarantees that all globally scoped variables—such as validators and configuration options—are accessible and fully initialized, ensuring a safe point to begin custom interactions with the widget.
 
-### **on\_before\_verify hook**&#x20;
+### **on\_before\_verify hook**
 
 The **on\_before\_verify** hook is triggered just before the field data is sent to Clearout for validation. This hook is ideal for performing custom pre-validation checks on the input data.
 
@@ -367,11 +365,11 @@ function ({ email, $form }) {
 }
 ```
 
-### **on\_after\_verify hook**&#x20;
+### **on\_after\_verify hook**
 
 The **on\_after\_verify** hook is triggered after Clearout returns a response for the field's validation. This hook is particularly useful for performing any post-verification checks, triggering workflows, or making UI changes based on the validation outcome.
 
-**Function Parameters**&#x20;
+**Function Parameters**
 
 The callback receives a destructured object:
 

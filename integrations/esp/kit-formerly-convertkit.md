@@ -10,39 +10,29 @@ Clearout integrates seamlessly with Kit to help you validate email addresses ass
 
 {% stepper %}
 {% step %}
-### Connect Your Kit Account
+#### Connect Your Kit Account
 
-Click “**Add Account**” in Clearout to securely authenticate and sync your Kit account.&#x20;
+Click “**Add Account**” in Clearout to securely authenticate and sync your Kit account.
 
 {% hint style="info" %}
 **Note**: Only one Kit account can be connected at a time. To connect a different account, you will need to log out from Kit and reauthenticate.
 {% endhint %}
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/kit_add_account_page.webp" alt="Connect Kit account with Clearout for List verification"><figcaption></figcaption></figure></div>
-
-
 {% endstep %}
 
 {% step %}
-### Select a Tag (List) for Validation
+#### Select a Tag (List) for Validation
 
 Once connected, Clearout displays all your **Kit tags as lists**.\
 \
 Subscriber counts are not shown until a specific tag is added for validation.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/kit_add_list_page.webp" alt="Select Kit Tag list to start verification" width="563"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Validate Your Subscribers
+#### Validate Your Subscribers
 
 **Select a tag** to run a real-time email verification check. Clearout will identify and categorize invalid, disposable, gibberish, role-based, or risky email addresses.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/kit_list_added.webp" alt="Start verification of your selected Kit list" width="563"><figcaption></figcaption></figure></div>
-
->
->
-> ### Key Integration Details
+> #### Key Integration Details
 >
 > * **Tags as Lists**\
 >   In Kit, tags segment your subscribers. Clearout treats each tag as an individual list.\
@@ -56,7 +46,7 @@ Subscriber counts are not shown until a specific tag is added for validation.
 {% endstep %}
 
 {% step %}
-### Export the verified results
+#### Export the verified results
 
 After the validation is complete, the user can download the results in .CSV or .XLSX format, or export them directly to their Kit account.
 
@@ -66,10 +56,6 @@ The user can export the results by selecting either "**unsubscribe**," "**append
 * **Append**: User can export the result and append the Clearout columns with the selected tag in the Kit account.
 
 This ensures your email list remains accurate, your reputation intact, and your Kit automation workflows clean.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/kit_export.webp" alt="Export verified list results to Kit "><figcaption></figcaption></figure></div>
-
-
 {% endstep %}
 {% endstepper %}
 
@@ -82,8 +68,6 @@ Clearout’s custom fields provide deep insights into the quality of each subscr
 * **Filters and Segments**: Use Clearout fields to create more refined segments and improve targeting.
 
 For every validated tag or preset, you can use the **Clearout \*** fields in Kit filters and automation rules to optimize your communication and reduce churn.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/kit_custom_field_filter.webp" alt="Edit Kit filters to add Clearout fields in the automation rules"><figcaption></figcaption></figure></div>
 
 <h3 align="center">Frequently Asked Questions</h3>
 

@@ -4,39 +4,33 @@ You must verify your Mailerlite email lists so that you can maintain and improve
 
 {% stepper %}
 {% step %}
-### Connect account <a href="#keyqj" id="keyqj"></a>
+#### Connect account <a href="#keyqj" id="keyqj"></a>
 
-After logging in to your Clearout account, go to the **Integration page** and select **MailerLite**.&#x20;
+After logging in to your Clearout account, go to the **Integration page** and select **MailerLite**.
 
-Click on "**Add Account**" to add your MailerLite account. A pop-up will be displayed asking for the **API Key and Account Name**. You can find these details in your MailerLite account in&#x20;
+Click on "**Add Account**" to add your MailerLite account. A pop-up will be displayed asking for the **API Key and Account Name**. You can find these details in your MailerLite account in
 
-“Account Integration **→** Developer API **→** API Key“.&#x20;
+“Account Integration **→** Developer API **→** API Key“.
 
 Once you feed in the Key details in Clearout, click on the "**Add Account**" button.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/connect-account-2-1024x506.png" alt="Connect MailerLite account with Clearout for list verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Add the email lists <a href="#plfp3" id="plfp3"></a>
+#### Add the email lists <a href="#plfp3" id="plfp3"></a>
 
 Keep the email address lists clean by easily adding them from the MailerLite account.\
 \
 Once you've successfully logged in, **select the list(s)** you want to verify from the associated MailerLite account.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/select-list.webp" alt="Select the list to start verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Verify the email address list <a href="#h8w70" id="h8w70"></a>
+#### Verify the email address list <a href="#h8w70" id="h8w70"></a>
 
 Once the mailing list is successfully added, click on the "**Verify**" button to start validating the added mailing list.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/verify (1).webp" alt="Start verification of selected MailerLite list"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Export the verified results <a href="#qbdg2" id="qbdg2"></a>
+#### Export the verified results <a href="#qbdg2" id="qbdg2"></a>
 
 Once the email validation is complete, the user can either **download the result** (in .CSV, .XLSX) or **directly export** it to the MailerLite account.\
 \
@@ -45,8 +39,5 @@ The user can export the result by selecting either "**unsubscribe**," "**append*
 **Unsubscribe:** By choosing this option, you can unsubscribe from the invalid/non-deliverable email addresses on the MailerLite list automatically, which removes all the non-deliverables from the mailing list.\
 \
 **Append:** By choosing this option, you can export the result and append the Clearout columns with the original file in the MailerLite account.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/export (2).webp" alt="Export verified list results to MailerLite"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
-

@@ -12,14 +12,14 @@ You can also watch:
 
 ***
 
-### Integrate Clearout in HubSpot Chatflows  <a href="#k5hl0" id="k5hl0"></a>
+### Integrate Clearout in HubSpot Chatflows <a href="#k5hl0" id="k5hl0"></a>
 
 Follow these steps for a bot such as **Qualify leads bot** (the same pattern works for other bots)
 
 Open your HubSpot chatflow:
 
 * Go to **Conversations → Chatflows**.
-* Click **Create chatflow → Website** and choose a bot (for example,  **Qualify leads bot**).
+* Click **Create chatflow → Website** and choose a bot (for example, **Qualify leads bot**).
 * Click **Next** to go to the **Build** section, where you can edit the action boxes
 
 The steps given below are for the **Qualify leads bot**:
@@ -31,14 +31,10 @@ Once 'Qualify leads bot' is selected, click Next to reach the Build section to e
 
 {% step %}
 Scroll down to the Action box named Get Email and click on the + icon below it to create a new action for email verification.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_chatflow.png" alt="Select Action Box to create trigger for Email verification in HubSpot Chatflow"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 A new Action window will open. Scroll down to Run a code snippet, give an Action name and delete the existing code.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_chatflow_step two.png" alt="Run a code snippet, give an Action name and delete the existing code"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -93,8 +89,6 @@ exports.main = (event, callback) => {
 
 {% step %}
 **Edit Row 11** by replacing '**REPLACE\_WITH\_YOUR\_CLEAROUT\_SERVER\_APP\_TOKEN**' with Clearout's API Token and Save.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_chatflow_step6.png" alt="Add Clearout Server API Token in Row 11 on the Clearout Code Snippet"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -103,29 +97,21 @@ How To Generate a Clearout API Token?
 * To generate a Clearout API token, log in to Clearout, then navigate to [Developer **→** API](https://app.clearout.io/developer/api/list).
 * Give a name and description to the token and click Create
 * Copy the API token and paste it in Row 11 of the code
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/image (31).png" alt="Generate Clearout Server API Token"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Go to the Get Email action box and edit the action name to Get\_Email.
 
 > Note: The name should be exactly the same.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_chatflow_step7.png" alt="Go to the Get Email action box and edit the action name to Get_Email."><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 In the same Action box, scroll down to Save to HubSpot property. Choose Email from the dropdown. Uncheck the box that says Skip this action if property already exists and Save.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/hs_chatflow_step8.png" alt="Save to HubSpot property. Choose Email from the dropdown. Uncheck the box that says Skip this action if property already exists and Save."><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 **Your** **HubSpot chatbot with real-time email verification is READY**! Give it a test run by hitting Preview.
 
 Wasn't that quick and easy? The addition of a simple code snippet to your Chatflows can effectively block unwanted junk data from infiltrating your system. Let's make a conscious decision to work exclusively with fresh and valid data, ensuring we don't squander our precious time on irrelevant information.
-
-
 {% endstep %}
 {% endstepper %}

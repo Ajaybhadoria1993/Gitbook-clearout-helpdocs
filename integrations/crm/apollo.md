@@ -19,10 +19,8 @@ Reduce bounce rates, boost deliverability, and be confident your emails are land
 If you already have an Apollo account integrated with Clearout, click on Apollo to see the contact list.
 
 {% hint style="info" %}
-You can link multiple Apollo accounts&#x20;
+You can link multiple Apollo accounts
 {% endhint %}
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/connect-account (1).jpg" alt="Connect Apollo account with Clearout for list verification"><figcaption></figcaption></figure></div>
 
 ## Add a list from your Apollo account <a href="#xfjsy" id="xfjsy"></a>
 
@@ -30,17 +28,13 @@ You can easily maintain the cleanliness of your email lists by adding them direc
 
 After linking, select the email list from the existing Apollo Account. Then click on "**Add to My List**" to proceed with the bulk list verification.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Clearout-Webapp-Fast-Affordable-Accurate-Email-Validation-Email-Verification-Tool-01-26-2026_10_22_PM.png" alt="Select list to start verification"><figcaption></figcaption></figure></div>
-
-## Verify Apollo list  <a href="#wcq1p" id="wcq1p"></a>
+## Verify Apollo list <a href="#wcq1p" id="wcq1p"></a>
 
 After the list has been added successfully, click "**Verify**" to begin validating the Apollo list.\
 \
-You can opt to export the confirmed email list to their Apollo account once the email validation is done. The result may be exported, and the Clearout columns can be appended to the original file in the Apollo list. \
+You can opt to export the confirmed email list to their Apollo account once the email validation is done. The result may be exported, and the Clearout columns can be appended to the original file in the Apollo list.\
 \
 Once the export is completed, Clearout sends an export success email to the user.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Clearout-Webapp-Fast-Affordable-Accurate-Email-Validation-Email-Verification-Tool-01-26-2026_10_27_PM.png" alt="Export verified result to Apollo"><figcaption></figcaption></figure></div>
 
 ## Apollo List Export Failure Due to API Limit
 
@@ -51,8 +45,6 @@ There is an alternative to upgrading your Apollo.io plan:
 {% stepper %}
 {% step %}
 Download the verified result file from Clearout.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Clearout-Webapp-Fast-Affordable-Accurate-Email-Validation-Email-Verification-Tool-01-26-2026_10_30_PM.png" alt="Download verified list results"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -69,7 +61,5 @@ That's it, and you are done without needing to upgrade your current Apollo.io pl
 Go to Apollo '**List**', Click on '**More Filters**' & Navigate to '**Custom Fields**' to select the required Clearout Columns
 
 Using the Apollo rule engine, you may automate this procedure as well. For each verified email list, go to settings, then rule engine, and configure the same procedures as an automatic job.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/filter configuration-apollo.webp" alt="Enable Custom Field on &#x22;More filters&#x22; to view Clearout Result Fields"><figcaption></figcaption></figure></div>
 
 You get to see various Clearout standard columns, and you can pick the ones you need. We recommend choosing the "**safe to send**" option for the highest deliverability rate or selecting emails categorized under the "**Valid**" status.

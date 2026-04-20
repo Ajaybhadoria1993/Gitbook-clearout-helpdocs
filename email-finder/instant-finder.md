@@ -5,9 +5,7 @@ icon: jet-fighter
 
 # Instant Finder
 
-As the name suggests, Instant Email Finder is used to get instant results. Once you have created an account, go to Email Finder, enter the prospect's name and the domain/company name, and click on search.&#x20;
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/clearout_instant_email_finder_update-2cf8c1b352709cda29739937c3f84288.gif" alt="Instant Email Finder Search and Results Overview" width="563"><figcaption></figcaption></figure></div>
+As the name suggests, Instant Email Finder is used to get instant results. Once you have created an account, go to Email Finder, enter the prospect's name and the domain/company name, and click on search.
 
 This feature allows you to look up email addresses individually, and the results will be available in a few seconds.
 
@@ -24,8 +22,6 @@ This feature allows you to look up email addresses individually, and the results
 * Enter the **prospect’s name** in the name field.
 * Enter the **company name or domain** in the corresponding input field.
 * Click **Search** to start finding the email address.
-
-<figure><img src="../.gitbook/assets/image (1).png" alt="Instant Email Finder Search and Results" width="563"><figcaption></figcaption></figure>
 
 The result will be displayed within a few seconds or it will be available under the [Email Finder History.](instant-finder.md#finder-history-in-activities)
 
@@ -46,8 +42,6 @@ Any lookup with the status **"In-progress"** will be added to the history and po
 ## Email Finder History <a href="#email-finder-history" id="email-finder-history"></a>
 
 The **Email Finder History** section provides an audit trail of all instant email lookups.​
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/ef-history.png" alt="Instant Email Finder History"><figcaption></figcaption></figure></div>
 
 * Columns include **Name**, **Company**, **Email Address**, **Confidence Score**, and **Date**.​
 * You can:

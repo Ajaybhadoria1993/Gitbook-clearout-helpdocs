@@ -22,8 +22,6 @@ Clearout uses domain intelligence, pattern analysis, and real-time data checks t
 
 The Confidence Score indicates how closely the discovered email address matches the provided contact information such as name, company, and domain. Higher scores represent a stronger match and better deliverability.
 
-{% include "../../.gitbook/includes/ef-table.md" %}
-
 {% hint style="info" %}
 **Quick Note:** Higher score = higher trust, better deliverability, and stronger alignment with true lead identity.
 {% endhint %}

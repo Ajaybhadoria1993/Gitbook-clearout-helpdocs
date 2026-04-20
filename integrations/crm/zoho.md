@@ -10,8 +10,6 @@ That's where Clearout steps in.
 * **Fully synced** with Zoho CRM contact lists
 * **Easy export of cleaned lists** with flexible options
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/zoho_how_to_set_up.webp" alt="Overview on Zoho list verified on Clearout" width="563"><figcaption></figcaption></figure></div>
-
 ## How to Set Up the Clearout–Zoho CRM Integration in a Few Steps
 
 The Clearout integration works via Zoho CRM, allowing you to:
@@ -27,7 +25,7 @@ The Clearout integration works via Zoho CRM, allowing you to:
 
 {% stepper %}
 {% step %}
-### Connect your Zoho CRM account to Clearout
+#### Connect your Zoho CRM account to Clearout
 
 * **Log in** to your Clearout account
 * Go to the **Integrations** section
@@ -35,31 +33,25 @@ The Clearout integration works via Zoho CRM, allowing you to:
 * Click '**Add Account**'
 * A pop-up will prompt you to **authorize Clearout** with Zoho CRM
 * Once authorized, your Zoho CRM campaign lists will be ready to import and verify
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Connect your Zoho CRM account to Clearout.png" alt="Connect Zoho account with Clearout for list verification"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Import Your Contact or Lead Lists
+#### Import Your Contact or Lead Lists
 
 * Once connected, you can choose from your Zoho Campaigns Lead or Contact lists
 * **Select the list(s)** you wish to clean and click “**Add to My List**”.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/zoho-list.png" alt="Import list and select the list to verify on Clearout"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Start the Verification
+#### Start the Verification
 
 * After importing, hit '**Verify**'
 * Clearout performs **20+ advanced checks**, ensuring 99% accuracy
 * Disposable, spam trap, catch-all, syntax errors, and inactive emails are all flagged
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/export verify.png" alt="Start verification of selected list"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Export the Clean List
+#### Export the Clean List
 
 After the validation is complete, the user can download the results in CSV format or export them directly to their Zoho CRM.
 
@@ -69,8 +61,6 @@ The user can export the results by selecting "**unsubscribe**," "**append**," or
 * **Append:** Select this option to append the Clearout standard columns to Zoho CRM.
 
 This ensures your email list remains accurate, your reputation intact, and your Zoho CRM is clean.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/Clearout-Webapp-Fast-Affordable-Accurate-Email-Validation-Email-Verification-Tool-02-02-2026_05_34_PM.png" alt="Export verified list results to Zoho"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 

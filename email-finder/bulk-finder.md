@@ -5,9 +5,9 @@ icon: weight-hanging
 
 # Bulk Finder
 
-The Clearout Bulk Email Finder is used to discover email addresses in bulk and download enriched results with confidence scores. **The bulk finder efficiently handles the simultaneous processing of hundreds or thousands of prospects, optimizing scalability**.&#x20;
+The Clearout Bulk Email Finder is used to discover email addresses in bulk and download enriched results with confidence scores. **The bulk finder efficiently handles the simultaneous processing of hundreds or thousands of prospects, optimizing scalability**.
 
-It provides flexibility by accommodating CSV or Excel data uploads and downloads. Intelligent functionalities, including automatic duplicate identification, quality metrics, and deliverability insights, guarantee data precision.&#x20;
+It provides flexibility by accommodating CSV or Excel data uploads and downloads. Intelligent functionalities, including automatic duplicate identification, quality metrics, and deliverability insights, guarantee data precision.
 
 By preventing charges for duplicate or missing records, the solution encourages efficient use and aids in cost management.
 
@@ -16,8 +16,6 @@ By preventing charges for duplicate or missing records, the solution encourages 
 * Log in to your [**Clearout dashboard**.](https://app.clearout.io/dashboard/)​
 * In the top navigation, go to **Email Finder →** [**Add List**](https://app.clearout.io/email-finder/add-list).​
 * Click **Add List** and upload your file (CSV/XLSX) to start bulk email finding.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/ef-bulk-add-list.png" alt="Upload List with Name and Company name or Domain " width="375"><figcaption></figcaption></figure></div>
 
 ## **Supported File Types**
 
@@ -33,7 +31,7 @@ Your file **must include** these two columns:
 <table><thead><tr><th width="170.2265625">Column</th><th width="304.68359375">Description</th><th>Example</th></tr></thead><tbody><tr><td><strong>Name</strong></td><td>Prospect's full name or first name</td><td>"John Smith" or "John"</td></tr><tr><td><strong>Domain/Company</strong></td><td>Company domain or company name</td><td>"microsoft.com" or "Microsoft"</td></tr></tbody></table>
 
 {% hint style="info" %}
-### **Optional Columns**
+#### **Optional Columns**
 
 You can add any additional columns you want and they'll be preserved in your results:
 
@@ -63,18 +61,16 @@ Find your uploaded list
 
 {% step %}
 Click the **"Find Emails"** butto&#x6E;**,** and processing begins!
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/ef-bulk-finding.png" alt="Starting the Email finding process for uploaded list"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
 **Processing time depends on:**
 
-* Number of records&#x20;
+* Number of records
 * Current system load
 * Data quality
 
-You can close the page; the email finding process will continue in the background, and you will receive an email notification immediately after it is completed.&#x20;
+You can close the page; the email finding process will continue in the background, and you will receive an email notification immediately after it is completed.
 
 ## Cancel Finding
 
@@ -114,7 +110,7 @@ The status provides a broad picture of the quality of the email addresses found.
 
 #### Important Terms Related to The Results <a href="#important_terms_related_to_the_results" id="important_terms_related_to_the_results"></a>
 
-<table><thead><tr><th width="220.03125">Name</th><th>Description</th></tr></thead><tbody><tr><td>Business Account</td><td>The appended columns show if an email address belongs to a business account.</td></tr><tr><td>Duplicate</td><td><p>Any email list with the same data (first name, last, name, domain/company name) more than once, leading to the same result, is categorized as duplicates. </p><p><br>The user will not be charged for the duplicates.</p></td></tr><tr><td>Confidence Level</td><td>An email deliverability scale that indicates how good the discovered email addresses are for a list and how good the list can be for cold email outreach campaigns. Categorized as high, medium, and low.</td></tr><tr><td>Confidence Score</td><td>An AI-based percentile allotted to each email address that indicates the accuracy level with which the discovered email address matches the lead in the query.</td></tr></tbody></table>
+<table><thead><tr><th width="220.03125">Name</th><th>Description</th></tr></thead><tbody><tr><td>Business Account</td><td>The appended columns show if an email address belongs to a business account.</td></tr><tr><td>Duplicate</td><td><p>Any email list with the same data (first name, last, name, domain/company name) more than once, leading to the same result, is categorized as duplicates.</p><p><br>The user will not be charged for the duplicates.</p></td></tr><tr><td>Confidence Level</td><td>An email deliverability scale that indicates how good the discovered email addresses are for a list and how good the list can be for cold email outreach campaigns. Categorized as high, medium, and low.</td></tr><tr><td>Confidence Score</td><td>An AI-based percentile allotted to each email address that indicates the accuracy level with which the discovered email address matches the lead in the query.</td></tr></tbody></table>
 
 ### **Result File Headers**
 
@@ -123,8 +119,6 @@ The status provides a broad picture of the quality of the email addresses found.
 ## **Finder List Analysis**
 
 This brief and quick analysis offers an instant review of the overall email finder result before downloading the actual detailed result.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/finder list analysis bulk email finder.png" alt="Download the result after bulk finding"><figcaption></figcaption></figure></div>
 
 #### The information it provides
 
@@ -137,7 +131,7 @@ This brief and quick analysis offers an instant review of the overall email find
 * The list includes the date of creation and the date of processing.
 * Time taken for finding the results
 * Total number of inputs in the list
-* Billable count indicates the credits have been used.&#x20;
+* Billable count indicates the credits have been used.
 * The Confidence Level is an email deliverability scale that indicates the quality of the discovered email addresses on a list and their effectiveness for cold email outreach campaigns. It can be high, low, or moderate depending on the quality of data provided
 
 ## **Remove List** <a href="#remove-list" id="remove-list"></a>
@@ -145,8 +139,6 @@ This brief and quick analysis offers an instant review of the overall email find
 Bulk finder list files can be deleted either before or after finding email addresses by using the 'bin' icon next to the list name.
 
 > Files cannot be deleted while finding is in progress
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/ef-result-downlaod.png" alt="Remove the list after bulk finding"><figcaption></figcaption></figure></div>
 
 ## Data Retention & Result File Availability <a href="#data-retention--file-availability" id="data-retention--file-availability"></a>
 

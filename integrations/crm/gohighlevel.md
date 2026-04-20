@@ -8,7 +8,7 @@
 
 {% stepper %}
 {% step %}
-### Connect account
+#### Connect account
 
 After logging in to your Clearout account, go to the Integration page and select GHL. Fill in with "**Private Integration Key, Location ID, and Account Name**."
 
@@ -21,38 +21,30 @@ Here's how you can retrieve these details from your GHL account:
 * To get the **Location ID**, go to **Settings** **→ Business Profile → Location ID**.
 
 Once you've fed the Key details into Clearout, click on the "**Add Account**" button.<br>
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/connect_account_ghl.webp" alt="Connect GoHighLevel account with Clearout"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-### Add the email lists
+#### Add the email lists
 
-Once your GHL account is connected, Clearout will automatically display your tagged contact lists from GHL. \
+Once your GHL account is connected, Clearout will automatically display your tagged contact lists from GHL.\
 \
 To prepare contacts for verification, start by [creating tags in GHL](https://www.bardeen.ai/answers/how-to-create-tags-in-gohighlevel) to group specific contacts. These tagged contact lists will then appear in Clearout, allowing you to select one or more for verification. This organized tagging system makes it easy to **manage and verify** only the contacts you need, directly from your GoHighLevel account.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/add_the_email_lists_ghl (1).webp" alt="Select the GoHighLevel list for verification on Clearout"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-#### Verify the email address list
+**Verify the email address list**
 
 After successfully adding the selected tagged list, click on "**Verify**" to initiate the validation process.
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/verify_the_email_address_list_ghl (1).webp" alt="Verify the selected list"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
-#### Export the verified results
+**Export the verified results**
 
 Once the validation is completed, the user can choose how to export the verified list to the GHL account. The user can export the result by choosing to unsubscribe, append, or else select both.
 
 **Unsubscribe**: On selecting this option, the non-deliverable email addresses will be automatically un-tagged from the Tag list and will not be part of the verified list for the campaigns.
 
 **Append:** By selecting this option, the user can export the result, along with the selected appended fields, back to the GHL accoun&#x74;**.**
-
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/export_the_verified_results_ghl.webp" alt="Export verified list results to GoHighLevel"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 

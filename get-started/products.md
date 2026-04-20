@@ -7,14 +7,12 @@ icon: rectangle-history-circle-plus
 
 Clearout's platform offers multiple products designed to work **independently or together**. With unmatched accuracy, speed, and ease, these platform tools will elevate your GTM efforts.
 
-
-
 {% columns %}
 {% column width="50%" %}
-<h3 align="center"><a href="../email-verifier/overview.md">Email Verifier</a></h3>
+<h4 align="center"><a href="../email-verifier/overview.md">Email Verifier</a></h4>
 
-* Goes beyond advance to deep check by resolving **catch-all emails and reducing unknown** results&#x20;
-* Clearly democratize **risky, safe-to-send** email addresses&#x20;
+* Goes beyond advance to deep check by resolving **catch-all emails and reducing unknown** results
+* Clearly democratize **risky, safe-to-send** email addresses
 * **Built for speed and scale**, supports bulk lists, real-time instant API verification, Webhooks
 * Helps **protect sender reputation** and improve campaign performance
 
@@ -24,8 +22,6 @@ Clearout's platform offers multiple products designed to work **independently or
 {% column width="50%" %}
 {% hint style="info" %}
 Multi-layer checks to ensure high accuracy and deliverability
-
-![clearout email verifier](<../.gitbook/assets/Screenshot from 2025-10-24 20-24-55.png>)
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -36,15 +32,13 @@ Multi-layer checks to ensure high accuracy and deliverability
 {% column width="50%" %}
 {% hint style="info" %}
 Accurate email discovery for reliable outreach at scale
-
-![clearout email finder](<../.gitbook/assets/Screenshot from 2025-10-24 20-24-11.png>)
 {% endhint %}
 {% endcolumn %}
 
 {% column width="50%" %}
-<h3 align="center"><a href="../email-finder/overview.md">Email Finder</a></h3>
+<h4 align="center"><a href="../email-finder/overview.md">Email Finder</a></h4>
 
-* Discovers **business email addresses** using a name, domain, and/or company&#x20;
+* Discovers **business email addresses** using a name, domain, and/or company
 * **Results are pre-verified** and assigned a Confidence Score to indicate match accuracy
 * Supports **large-scale bulk finding** with confidence level filtering
 
@@ -56,7 +50,7 @@ Accurate email discovery for reliable outreach at scale
 
 {% columns %}
 {% column width="50%" %}
-<h3 align="center"><a href="../form-guard/overview.md">Form Guard</a></h3>
+<h4 align="center"><a href="../form-guard/overview.md">Form Guard</a></h4>
 
 * Block **spam, bots, and disposable** emails at the source
 * Prevent **invalid or bad** contact data entering your forms
@@ -64,15 +58,11 @@ Accurate email discovery for reliable outreach at scale
 * Support **email, phone, and name** field validation
 
 <a href="../form-guard/overview.md" class="button secondary">Real-time protection</a>
-
-
 {% endcolumn %}
 
 {% column width="50%" %}
 {% hint style="info" %}
 Real-time protection against fake and invalid form submissions
-
-![clearout form guard](<../.gitbook/assets/image (1) (1) (1).png>)
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}
@@ -83,13 +73,11 @@ Real-time protection against fake and invalid form submissions
 {% column width="50%" %}
 {% hint style="info" %}
 Build targeted prospect lists with verified contact data
-
-![clearout prospecting](<../.gitbook/assets/Screenshot from 2025-10-24 20-27-33.png>)
 {% endhint %}
 {% endcolumn %}
 
 {% column width="50%" %}
-<h3 align="center"><a href="../prospecting/overview.md">Prospecting</a></h3>
+<h4 align="center"><a href="../prospecting/overview.md">Prospecting</a></h4>
 
 * **Find, enrich, and verify** prospects at scale with the source you can trust
 * Create **high-quality prospect lists** for outbound teams
@@ -104,7 +92,7 @@ Build targeted prospect lists with verified contact data
 
 {% columns %}
 {% column width="50%" %}
-<h3 align="center"><a href="../reverse-lookup/overview.md">Reverse Lookup</a></h3>
+<h4 align="center"><a href="../reverse-lookup/overview.md">Reverse Lookup</a></h4>
 
 * Identify prospects using **email, or LinkedIn URL**
 * Enrich contacts with **verified professional data**
@@ -117,7 +105,7 @@ Build targeted prospect lists with verified contact data
 
 {% column width="50%" %}
 {% hint style="info" %}
-Streamline Lead Generation with Our Reverse Lookup![clearout reverse lookup](../.gitbook/assets/reverse_lookup_page.gif)
+Streamline Lead Generation with Our Reverse Lookup
 {% endhint %}
 {% endcolumn %}
 {% endcolumns %}

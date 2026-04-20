@@ -13,19 +13,12 @@ Successful marketing heavily depends on teamwork. Therefore, Clearout allows you
 
 * Log in to [Clearout dashboard](https://app.clearout.io/dashboard)
 * On your dashboard, click on “Upgrade to Team Account”.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/1st step.webp" alt="Enable Team Account from Dashboard"><figcaption></figcaption></figure></div>
-
 * A pop-up will open in which you need to enter the following:
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/2nd image.webp" alt="Add Organisation details to setup team account"><figcaption></figcaption></figure></div>
 
 <table><thead><tr><th width="246.13671875"></th><th></th></tr></thead><tbody><tr><td>Organisation Name</td><td>Enter organisation for which you would like to use the Team Account</td></tr><tr><td>Organisation Website URL</td><td>Enter organisation Website URL for which you would like to use the Team Account</td></tr><tr><td>Enter Phone Number</td><td>Enter the phone number through which you would like to use the Team Account</td></tr></tbody></table>
 
 * Click on 'Submit'. Once submitted, you need to log in again.
 * Under the 'More' tab, click on the 'Admin' button to set up the team and invite your members
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/admin option.webp" alt="Navigate to &#x22;Admin&#x22; panel to invite team members"><figcaption></figcaption></figure></div>
 
 > Team account upgrade can ONLY be done from an individual account
 
@@ -55,8 +48,6 @@ Clearout supports **three different user roles** to help you organize teams and 
 {% stepper %}
 {% step %}
 Click on the 'add member' icon
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/admin.webp" alt="Add team members from Admin Panel"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -65,24 +56,18 @@ Assign the position of 'Manager' or 'Executive', the number of credits, and the 
 > Unlimited Credits: No limit on use of the credits by the team member
 >
 > No Daily Limit: No limit on daily use of the credits by the team member
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/role.webp" alt="Assign role and credits to invited member"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Click on 'Add Member'
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/ add member.webp" alt="Invite Team Member"><figcaption></figcaption></figure></div>
-
-> &#x20;An invitation will be sent to the member. Once accepted, the membership will be activated.
+> An invitation will be sent to the member. Once accepted, the membership will be activated.
 {% endstep %}
 {% endstepper %}
 
 ### Edit/Deactivate/Remove Team Members <a href="#edit_delete_team_members" id="edit_delete_team_members"></a>
 
 <table><thead><tr><th width="137.91015625"></th><th></th></tr></thead><tbody><tr><td>Owner</td><td>The owner can add, deactivate, remove, or edit the roles and credits across the team.</td></tr><tr><td>Manager</td><td>The manager can only add or edit the roles and credits of the executives and other managers.</td></tr><tr><td>Executive</td><td>The executives cannot edit the team.</td></tr></tbody></table>
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/delete the member.webp" alt="Edit/Deactivate/Remove Team Members"><figcaption></figcaption></figure></div>
 
 ### How to Add More Seats To A Team Account? <a href="#add_more_seats_to_account" id="add_more_seats_to_account"></a>
 
@@ -97,22 +82,16 @@ Enter the 'Admin' panel of your account.
 
 {% step %}
 Click on the seat '+' icon.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/add more seats.webp" alt="Add additional seats to team account"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
 Once you click on the '+' button to purchase the additional seats for your team.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/confirmation.webp" alt="Purchase the required seats at one-time cost"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
 ## **Credit Management**
 
 <table><thead><tr><th width="202.34375"></th><th></th></tr></thead><tbody><tr><td>Owner</td><td>The owner can assign limits to daily usage and the overall usage of members across the team.</td></tr><tr><td>Manager</td><td>The managers can assign the credits of the executives and other managers.</td></tr><tr><td>Executive</td><td>The executives cannot assign or edit the number of credits.</td></tr></tbody></table>
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/credit management.webp" alt="Manage credits and limits for team member"><figcaption></figcaption></figure></div>
 
 ## **Benefits of the Team Account**
 
@@ -124,4 +103,4 @@ Once you click on the '+' button to purchase the additional seats for your team.
 
 > The billing access is available with the owner only.
 
-By default, two free seats are available in the team account. Additional seats can be added through [add-ons](https://app.clearout.io/pricing).&#x20;
+By default, two free seats are available in the team account. Additional seats can be added through [add-ons](https://app.clearout.io/pricing).

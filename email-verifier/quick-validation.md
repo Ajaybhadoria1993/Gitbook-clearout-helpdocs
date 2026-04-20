@@ -7,8 +7,6 @@ icon: jet-fighter
 
 Quick Validation lets you verify one or more email addresses directly from the Clearout dashboard. It is designed for quick checks before adding contacts to your CRM or sending smaller campaigns.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/quick-validation (1).png" alt="clearout quick validation"><figcaption></figcaption></figure></div>
-
 ## Where to Find It in App
 
 1. Log in to your [**Clearout dashboard**](https://app.clearout.io/dashboard).​
@@ -28,8 +26,6 @@ Quick Validation lets you verify one or more email addresses directly from the C
 ### Reading output
 
 For each email, Quick Validation returns a status, safe to send, account type with AI Verdict
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/quick-validation-result.png" alt="quick validation result"><figcaption><p><a href="https://docs.clearout.io/api-overview.html#testing">Test email addresses</a> used to illustrate all result statuses</p></figcaption></figure></div>
 
 <table><thead><tr><th width="143.92578125">Status</th><th width="387.015625">Meaning</th><th>Suggested action</th></tr></thead><tbody><tr><td>Valid</td><td>Address is reachable</td><td>Safe to use in campaigns</td></tr><tr><td>Catch All</td><td>Domain accepts all addresses</td><td>Use with caution</td></tr><tr><td>Invalid</td><td>Address does not exist or is unreachable</td><td>Remove from your list</td></tr><tr><td>Unknown</td><td>Temporary issue (for example, timeout or greylisting)</td><td>Retry later</td></tr></tbody></table>
 
@@ -58,8 +54,7 @@ From [Activities](https://app.clearout.io/activities), you can download a report
 3. Save the report file (for example, CSV) and open it in your preferred tool to review or share results.​
 
 {% hint style="info" %}
-**Developer note**&#x20;
+**Developer note**
 
 Want to automate this? Use the [Instant Verify](/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734#post-email_verify-instant) API to run the same quick validation from your application
 {% endhint %}
-

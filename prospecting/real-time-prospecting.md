@@ -5,7 +5,7 @@ icon: virus-covid
 
 # Real-Time Prospecting
 
-Clearout enables real-time prospecting using the **Chrome Extension on both LinkedIn and Wellfound**, so you can discover and save prospect details while you browse profiles, searches, and company/startup pages.&#x20;
+Clearout enables real-time prospecting using the **Chrome Extension on both LinkedIn and Wellfound**, so you can discover and save prospect details while you browse profiles, searches, and company/startup pages.
 
 As you visit a profile or results page, the extension instantly reveals pre-verified emails, phone numbers, and key firmographic details, and it lets you add those prospects directly to your Clearout lists without leaving the site.
 
@@ -13,11 +13,9 @@ As you visit a profile or results page, the extension instantly reveals pre-veri
 
 **Use the Clearout Chrome Extension** to prospect in real time on LinkedIn, uncovering verified emails, phone numbers, and key firmographics while you **browse profiles, conduct searches, connect with others, and explore Sales Navigator** lead lists.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/clearout-linkedin-chrome-extension.gif" alt="Overview of Clearout LinkedIn Chrome Extension on LinkedIn"><figcaption></figcaption></figure></div>
-
 ### List building on LinkedIn
 
-Clearout’s LinkedIn Chrome Extension lets you turn any LinkedIn surface, profile pages, search results, and Sales Navigator lead lists into a continuously growing prospect list inside Clearout.&#x20;
+Clearout’s LinkedIn Chrome Extension lets you turn any LinkedIn surface, profile pages, search results, and Sales Navigator lead lists into a continuously growing prospect list inside Clearout.
 
 You can work in manual mode for precise selection or use automation to capture prospects in bulk while you focus on other tasks
 
@@ -43,11 +41,9 @@ You can work in manual mode for precise selection or use automation to capture p
 
 **Clearout’s Chrome Extension lets you build** targeted prospect lists directly from Wellfound (formerly AngelList) by capturing **startup and investor intelligence** as you browse
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/clearout-extract_wellfound.gif" alt="Overview of Clearout LinkedIn Chrome Extension on Wellfound" width="563"><figcaption></figcaption></figure></div>
-
 ### List building on Wellfound
 
-Clearout supports person and company list building from Wellfound, so you can turn startup company profiles into structured prospect lists in your Prospecting workspace.&#x20;
+Clearout supports person and company list building from Wellfound, so you can turn startup company profiles into structured prospect lists in your Prospecting workspace.
 
 You can extract details like funding, investors, headcount, roles, and locations while simultaneously discovering verified contact information for the right people behind each startup.
 

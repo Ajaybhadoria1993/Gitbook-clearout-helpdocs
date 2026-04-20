@@ -9,17 +9,15 @@ Clearout Email Verifier ensures every email address you collect or use is **vali
 
 Whether you are validating form submissions instantly or cleaning millions of records in bulk, Clearout delivers **high-confidence results without sending any emails,** keeping your sender reputation protected.
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/email-validation-gtm-workflow.png" alt="Real-time email validation on GTM workflows" width="563"><figcaption><p>Email Validation for GTM workflows</p></figcaption></figure></div>
-
 ## Different Ways of Email Validation
 
 Clearout supports multiple validation workflows to match how your teams collect and manage email data
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h3>Instant Validation</h3><p></p><p>Validate emails instantly at the point of capture before they enter your system.</p><ul><li>Signup and lead forms</li><li>CRM data entry</li><li>Live API requests</li></ul></td><td><a href="quick-validation.md">quick-validation.md</a></td></tr><tr><td><h3>Bulk Validation</h3><p></p><p>Upload large lists (CSV/XLSX) and validate them at scale.</p><ul><li>Cold outreach lists</li><li>CRM cleanup</li><li>Imported or legacy data</li></ul></td><td><a href="bulk-validation.md">bulk-validation.md</a></td></tr><tr><td><h3>API-Based Validation</h3><p></p><p>Integrate Clearout directly into your backend or data pipeline for automated validation.</p><ul><li><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734#post-email_verify-instant">Instant Verification</a></li><li><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734#post-email_verify-bulk">Bulk List Verification</a></li></ul></td><td><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734">Broken link</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h4>Instant Validation</h4><p>Validate emails instantly at the point of capture before they enter your system.</p><ul><li>Signup and lead forms</li><li>CRM data entry</li><li>Live API requests</li></ul></td><td><a href="quick-validation.md">quick-validation.md</a></td></tr><tr><td><h4>Bulk Validation</h4><p>Upload large lists (CSV/XLSX) and validate them at scale.</p><ul><li>Cold outreach lists</li><li>CRM cleanup</li><li>Imported or legacy data</li></ul></td><td><a href="bulk-validation.md">bulk-validation.md</a></td></tr><tr><td><h4>API-Based Validation</h4><p>Integrate Clearout directly into your backend or data pipeline for automated validation.</p><ul><li><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734#post-email_verify-instant">Instant Verification</a></li><li><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734#post-email_verify-bulk">Bulk List Verification</a></li></ul></td><td><a href="/broken/pages/30b386ddb6cfa13c4acec0d77478f79d5f845734">Broken link</a></td></tr></tbody></table>
 
 ## Understanding Email Verification Results <a href="#understanding_email_verification_results" id="understanding_email_verification_results"></a>
 
-Email deliverability is critical for successful email programs. Clearout backs its verification results with a **99% deliverability rate guarantee**.&#x20;
+Email deliverability is critical for successful email programs. Clearout backs its verification results with a **99% deliverability rate guarantee**.
 
 When you verify email addresses with Clearout, the bounce rate will not exceed 3% for messages sent to "**Guaranteed Deliverable"** email addresses or addresses where the **Safe-to-Send** flag is "**Yes**" provided all qualifying criteria are met.\
 \
@@ -40,14 +38,14 @@ The **Safe-to-Send** flag is based on industry best practices. In some cases, va
 
 The risk factor depends upon multiple reasons, like
 
-* Mail servers that are incorrectly configured&#x20;
-* Unusual SMTP response  &#x20;
+* Mail servers that are incorrectly configured
+* Unusual SMTP response
 * Any temporary mail account issue
 * Mail servers configured to accept all messages with anti-spam protection that reveals true status only when sending (for example, some Office 365 domains)
 
 ### Status
 
-Clearout categorizes email verification status into four primary statuses:  **Valid, Invalid, Catch All, or Unknown**. These statuses indicate the real-time deliverability of a given email addres&#x73;**.**
+Clearout categorizes email verification status into four primary statuses: **Valid, Invalid, Catch All, or Unknown**. These statuses indicate the real-time deliverability of a given email addres&#x73;**.**
 
 <table><thead><tr><th width="148.76953125">Primary Status</th><th>Description</th></tr></thead><tbody><tr><td>Valid</td><td>A valid email address has been verified as a real mailbox that is currently accepting email.</td></tr><tr><td>Invalid</td><td>An invalid email address has been verified as a bad recipient that does not exist or is not accepting email and will result in a bounce.</td></tr><tr><td>Catch All</td><td>It's a domain-level setting that accepts messages sent to any address under the domain, including invalid ones. Messages may be rejected later due to spam filters, mailbox limits, or security rules, so the "<strong>safe to send</strong>" status is marked as <strong>"risky".</strong></td></tr><tr><td>Unknown</td><td>This unknown status occurs when Clearout fails to receive a response from the recipient’s mail server. This event often occurs when the mail server is slow or temporarily unavailable. In some cases, retrying later returns a valid or invalid result.</td></tr></tbody></table>
 
@@ -67,9 +65,7 @@ Associated result fields provide additional context about each email address bey
 
 The Clearout standard columns <mark style="color:$info;">**are additional data fields that can be appended**</mark> to your original list after an email verification process to provide comprehensive information about the quality and status of each email address
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/Clearout-standard-column.png" alt="clearout bulk email validation standard result  columns"><figcaption><p>Email address appended with Clearout Standard Columns </p></figcaption></figure></div>
-
-<table><thead><tr><th width="265.5078125">Name</th><th>Description</th></tr></thead><tbody><tr><td>Clearout Safe to Send</td><td><p>Indicates whether it is safe to send to the address. </p><p>Values: <strong>Yes, Risky, No, Unknown</strong></p></td></tr><tr><td>Clearout Verification Status</td><td><p>Indicates the verification status of the email address. </p><p>Values: <strong>Valid, Invalid, Catch All, Unknown</strong></p></td></tr><tr><td>Clearout Reason</td><td>Determines the reason for the current status of an email address. Multiple reasons described below.</td></tr><tr><td>Clearout Suggested Email</td><td>Suggestions on what the valid email address could be. Mostly helpful in case of typos.</td></tr><tr><td>Clearout Bounce Type</td><td>Invalid email addresses are categorized as Hard bounce &#x26; Soft bounce.</td></tr><tr><td>Clearout Disposable Status</td><td><p>Whether an email address is disposable or not. </p><p>Categorized as <strong>Yes or No</strong>.</p></td></tr><tr><td>Clearout Free Account Status</td><td><p>Whether an email address belongs to a free email provider or not. </p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Role Account Status</td><td><p>Whether an email address is a role account or not. </p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Gibberish Status</td><td><p>Calling attention towards random email addresses. </p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Account</td><td>Identification of a probable name of the holder of the email address.</td></tr><tr><td>Clearout Domain</td><td>Identification of a probable domain name to which the email address belongs.</td></tr><tr><td>Clearout MX Record</td><td>Shows the MX record for the given email domain of the email address under verification.</td></tr><tr><td>Clearout SMTP Provider</td><td>Shows the STMP provider of the mail exchange for the given email domain.</td></tr><tr><td>Clearout Verified At (UTC)</td><td>Provides the exact time at which the email address was verified.</td></tr><tr><td>Clearout Time Taken (ms)</td><td>Time taken to verify the email address, in milliseconds.</td></tr></tbody></table>
+<table><thead><tr><th width="265.5078125">Name</th><th>Description</th></tr></thead><tbody><tr><td>Clearout Safe to Send</td><td><p>Indicates whether it is safe to send to the address.</p><p>Values: <strong>Yes, Risky, No, Unknown</strong></p></td></tr><tr><td>Clearout Verification Status</td><td><p>Indicates the verification status of the email address.</p><p>Values: <strong>Valid, Invalid, Catch All, Unknown</strong></p></td></tr><tr><td>Clearout Reason</td><td>Determines the reason for the current status of an email address. Multiple reasons described below.</td></tr><tr><td>Clearout Suggested Email</td><td>Suggestions on what the valid email address could be. Mostly helpful in case of typos.</td></tr><tr><td>Clearout Bounce Type</td><td>Invalid email addresses are categorized as Hard bounce &#x26; Soft bounce.</td></tr><tr><td>Clearout Disposable Status</td><td><p>Whether an email address is disposable or not.</p><p>Categorized as <strong>Yes or No</strong>.</p></td></tr><tr><td>Clearout Free Account Status</td><td><p>Whether an email address belongs to a free email provider or not.</p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Role Account Status</td><td><p>Whether an email address is a role account or not.</p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Gibberish Status</td><td><p>Calling attention towards random email addresses.</p><p>Categorized as <strong>Yes or No</strong></p></td></tr><tr><td>Clearout Account</td><td>Identification of a probable name of the holder of the email address.</td></tr><tr><td>Clearout Domain</td><td>Identification of a probable domain name to which the email address belongs.</td></tr><tr><td>Clearout MX Record</td><td>Shows the MX record for the given email domain of the email address under verification.</td></tr><tr><td>Clearout SMTP Provider</td><td>Shows the STMP provider of the mail exchange for the given email domain.</td></tr><tr><td>Clearout Verified At (UTC)</td><td>Provides the exact time at which the email address was verified.</td></tr><tr><td>Clearout Time Taken (ms)</td><td>Time taken to verify the email address, in milliseconds.</td></tr></tbody></table>
 
 ## Verification Settings
 
@@ -84,7 +80,7 @@ Clearout provides multiple validation modes based on accuracy and speed requirem
 
 Choose the mode that best fits your workflow.
 
-### **Gibberish Threshold Value**&#x20;
+### **Gibberish Threshold Value**
 
 Adjust the gibberish threshold to control how strict the gibberish validation check is during real-time validation
 
@@ -93,8 +89,6 @@ Adjust the gibberish threshold to control how strict the gibberish validation ch
 ### Allowlist / Blocklist (ABL)
 
 Blocklist and Allowlist settings let you control which emails and domains are allowed or blocked at the point of entry. You can create filters for specific email addresses, patterns, domains, wildcard domains, or TLDs.
-
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/Allow-block-list.png" alt="allowlist and blocklist setup"><figcaption><p> Allow/Block domains, email addresses based on your needs</p></figcaption></figure></div>
 
 ## Data Retention
 
@@ -106,15 +100,13 @@ Clearout follows strict data retention and privacy practices.
 
 Your data stays secure, private, and under your control.
 
-<div data-full-width="false" data-with-frame="true"><figure><img src="../.gitbook/assets/security-compliances (1).png" alt="security compilance" width="375"><figcaption><p><em>Security Compliance Frameworks supported by Clearout</em></p></figcaption></figure></div>
-
 ## Credit charge
 
-Clearout follows a transparent credit usage model.&#x20;
+Clearout follows a transparent credit usage model.
 
 * **1 credit** is charged per email validation, excluding the Unknown result status.
 * Credits are consumed only when validation is performed
-* Duplicate email addresses within the same list are not charged.&#x20;
+* Duplicate email addresses within the same list are not charged.
 
 This ensures predictable usage and cost control at scale. [Click here](https://clearout.io/pricing-guide/) to read about credit charges in detail.
 
@@ -122,4 +114,4 @@ This ensures predictable usage and cost control at scale. [Click here](https://c
 
 Clearout integrates seamlessly into your existing tech stack.
 
-<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><a href="../integrations/crm/"><mark style="color:$info;"><strong>CRM</strong></mark></a></td><td><p></p><ul><li>Validate contacts automatically</li><li>Keep sales and marketing data clean</li><li>Reduce manual cleanup</li></ul></td></tr><tr><td><a href="../developers/api/"><mark style="color:$info;"><strong>API</strong></mark></a></td><td><p></p><ul><li>Real-time and bulk validation endpoints</li><li>Built for scale and automation</li><li>Secure and reliable</li></ul></td></tr><tr><td><a href="../integrations/automation/"><mark style="color:$info;"><strong>Automations</strong></mark></a></td><td><p></p><ul><li><a href="../integrations/automation/zapier.md">Zapier</a></li><li><a href="../integrations/automation/make.md">Make</a></li><li><a href="../developers/webhooks/">Webhooks</a></li></ul></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><a href="../integrations/crm/"><mark style="color:$info;"><strong>CRM</strong></mark></a></td><td><ul><li>Validate contacts automatically</li><li>Keep sales and marketing data clean</li><li>Reduce manual cleanup</li></ul></td></tr><tr><td><a href="../developers/api/"><mark style="color:$info;"><strong>API</strong></mark></a></td><td><ul><li>Real-time and bulk validation endpoints</li><li>Built for scale and automation</li><li>Secure and reliable</li></ul></td></tr><tr><td><a href="../integrations/automation/"><mark style="color:$info;"><strong>Automations</strong></mark></a></td><td><ul><li><a href="../integrations/automation/zapier.md">Zapier</a></li><li><a href="../integrations/automation/make.md">Make</a></li><li><a href="../developers/webhooks/">Webhooks</a></li></ul></td></tr></tbody></table>

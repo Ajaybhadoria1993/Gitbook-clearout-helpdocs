@@ -9,13 +9,11 @@ The Form Guard provides a **flexible and powerful name validation component** th
 
 > **Note**: Current Gibberish name detection is based on Markov Chaining detection method and the model has been trained and tested for USA person names. You can control the detection accuracy by [**Gibberish Threshold**](name-field-validation.md#gibberish-threshold) **option**
 
-## Name Field Setting Options&#x20;
+## Name Field Setting Options
 
 Find below the various name field setting options that can be configured as part of the Guard creation or by using the customized code
 
-<div data-with-frame="true"><figure><img src="../.gitbook/assets/name_validation_clearout_formguard.webp" alt="select and customize Name validation settings for Name Field"><figcaption><p>Customize how names are validated on your forms.</p></figcaption></figure></div>
-
-### Acceptable Values&#x20;
+### Acceptable Values
 
 * **Accept any Valid name (default)**: Allows any name that is properly formatted, contains no profanity, and does not include special characters or numbers
 * **Accept only Non-Gibberish names**: Allows only names with valid format and non-gibberish characters
@@ -25,14 +23,14 @@ Find below the various name field setting options that can be configured as part
   * **Block form submission on timeout**: Block form submission if the name validation request times out
   * **Block form submission on usage limit crossed**: Block form submission when name validation usage limit exceeds
 
-### Feedback Messages&#x20;
+### Feedback Messages
 
 This option allows you to customize the feedback (error) messages displayed on forms when an invalid or unacceptable value is entered in the name field.
 
 * **Default**: A predefined set of feedback messages automatically set by the Form Guard.
 * **Custom**: Displays all possible feedback message variations for the name field, with their default values shown as placeholder text in the input field.
 
-## Hooks&#x20;
+## Hooks
 
 This option allows you to define custom JavaScript functions that execute either before or after Clearout's form validation.
 
@@ -86,7 +84,7 @@ on_after_verify: function({ name, $form, result }) {
 }
 ```
 
-## Field Selection&#x20;
+## Field Selection
 
 This option lets you choose whether Clearout's Form Guard should automatically detect and attach validation to name fields or apply validation only to specific fields of your choice.
 
@@ -95,11 +93,11 @@ By default, the **Automatic** mode is enabled, allowing Clearout to identify for
 * Element's type is of **text** and name attribute is any one of **name**, **first-name**, **last-name**, **first\_name**, **last\_name**, **firstname**, **lastname**, **clearout-name**
 * Element has attribute **data-clearout-name-field**
 
-## Gibberish Threshold&#x20;
+## Gibberish Threshold
 
 Defines the sensitivity level for gibberish detection. Possible values: Off, Low, High (default: High). Higher values apply stricter detection criteria.
 
-## Optional Fields&#x20;
+## Optional Fields
 
 In case the name input field is set as optional, without requiring the visitor to fill it, then you can set this option to <mark style="color:$info;">**"Yes."**</mark>
 
@@ -108,7 +106,7 @@ In case the name input field is set as optional, without requiring the visitor t
 * **If the field is left empty**: The form submission will proceed without validation for that field.
 * **If the field is filled**: Even though it's optional, the entered value will be validated. The form will only be allowed to submit if the value passes validation based on your configured criteria.
 
-## Testing&#x20;
+## Testing
 
 For testing purposes, you can use the following test names to verify different validation scenarios without incurring any credit cost.
 

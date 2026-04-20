@@ -2,7 +2,7 @@
 
 This guide explains **how to test your webhook integration** using Clearout's built-in testing tools and local development environments. Proper testing ensures your webhook endpoints work correctly before handling real events.
 
-### Dashboard Testing&#x20;
+### Dashboard Testing
 
 Clearout provides a built-in test interface that allows you to send sample webhook events to your configured endpoints. This method is the simplest way to confirm that your webhook integration is functioning correctly.
 
@@ -10,7 +10,7 @@ Clearout provides a built-in test interface that allows you to send sample webho
 
 Webhook test events let you simulate real event payloads, so you can verify your endpoint configuration and ensure your application handles webhooks correctly before going live.
 
-### Accessing Test Interface&#x20;
+### Accessing Test Interface
 
 To access the webhook test interface:
 
@@ -36,7 +36,7 @@ You'll be taken to the Test Events interface
 {% endstep %}
 {% endstepper %}
 
-### Test Events Interface&#x20;
+### Test Events Interface
 
 The test interface provides a simple form to send test webhook events:
 
@@ -50,9 +50,7 @@ The test interface provides a simple form to send test webhook events:
 
 The Events dropdown contains all available webhook events organized by service. Select the event type you want to test from the dropdown menu.
 
-<div data-with-frame="true"><figure><img src="../../.gitbook/assets/webhook-event-dropdown.png" alt="Webhook Event Selection Dropdown" width="563"><figcaption><p>Event selection dropdown showing all available webhook events grouped by service</p></figcaption></figure></div>
-
-### Test Process&#x20;
+### Test Process
 
 Testing webhooks is straightforward using the dashboard interface:
 
@@ -68,7 +66,7 @@ Testing webhooks is straightforward using the dashboard interface:
 * Test events have `event_mode: "test"` in the payload
 * Test events appear in event logs for verification
 
-### Local Development&#x20;
+### Local Development
 
 For local development, you'll need to expose your local server to receive webhooks. Here are the recommended approaches:
 
@@ -93,7 +91,7 @@ The free ngrok plan provides a new URL each time you restart. For consistent tes
 * **LocalTunnel** - Open source alternative to ngrok
 * **Cloudflare Tunnel** - Free tunneling service from Cloudflare
 
-### Test Payload Example&#x20;
+### Test Payload Example
 
 Here's an example test payload for `email_finder.instant.completed`:
 
@@ -136,7 +134,7 @@ Here's an example test payload for `email_finder.instant.completed`:
 
 The only difference between test and live events is the `event_mode` field. Test events use `"test"` while live events use `"live"`. All other payload data remains the same.
 
-### Testing Signature Validation&#x20;
+### Testing Signature Validation
 
 When testing signature validation, you can generate test signatures using your webhook secret:
 
@@ -184,7 +182,7 @@ const signature = generateTestSignature(secret, testPayload);
 console.log('Test signature:', signature);
 ```
 
-### Viewing Test Results&#x20;
+### Viewing Test Results
 
 After sending a test event, you can view the results in the Event Logs:
 
