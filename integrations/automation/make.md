@@ -39,18 +39,50 @@ You can use any other trigger app (forms, CRM, etc.) in the same way.
 {% step %}
 #### Select a Clearout action
 
-After your trigger is configured, add a Clearout action module:​
+After configuring your trigger, add a Clearout module to perform the desired action:​
 
 * In the next empty module, search for **Clearout** and select it.
-* From the list of available actions, choose **Verify Email Address**.
+* From the list of available actions, choose one based on your requirement.
 * Click **OK** to proceed.​
 
-This action will take an email from the trigger module and send it to Clearout for validation.
+Clearout provides the following actions in Make.com
+
+**Verify Email Address**
+
+Validate an email address to check its deliverability and quality
+
+This action takes an email from the previous module and verifies whether it is:
+
+* Valid
+* In-valid
+* Catch-all
+* Disposable
+* Risky
+
+Using this, you can reduce bounce rates and improve email campaign performance.
 
 <div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FNL7TQa2jiFVuCbB5Ip3R%252FScreenshot-4-1024x665.png%3Falt%3Dmedia%26token%3D5fc9478a-2fbe-4f63-8099-3cf9ea338491&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=959c4c13&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
+**Find Email**
+
+Find a professional, pre-verified email address using:
+
+* Person’s name
+* Company domain
+
+Each result includes a confidence score indicating the likelihood of the email being valid.
+
+This is useful for:
+
+* Lead generation
+* Prospecting
+* Outbound workflows
+*
+
+    <div data-with-frame="true"><figure><img src="https://docs.clearout.io/~gitbook/image?url=https%3A%2F%2F93738666-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FEXQQW0hsXyH0YD4ePoxb%252Fuploads%252FNL7TQa2jiFVuCbB5Ip3R%252FScreenshot-4-1024x665.png%3Falt%3Dmedia%26token%3D5fc9478a-2fbe-4f63-8099-3cf9ea338491&#x26;width=768&#x26;dpr=3&#x26;quality=100&#x26;sign=959c4c13&#x26;sv=2" alt=""><figcaption></figcaption></figure></div>
+
 **Connect your Clearout account**
 
 * In the Clearout module, click **Add** to create a new connection.​
