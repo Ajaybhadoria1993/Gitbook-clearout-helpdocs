@@ -6,7 +6,7 @@
 
 {% stepper %}
 {% step %}
-#### **Connect with Make**
+### **Connect with Make**
 
 To integrate Clearout with any other app via Make, you need a Make account.​ If you don’t have one, [create a Make account](https://www.make.com/en/register?utm_source=clearout\&utm_medium=partner\&utm_campaign=clearout-partner-program)
 
@@ -14,7 +14,7 @@ To integrate Clearout with any other app via Make, you need a Make account.​ I
 {% endstep %}
 
 {% step %}
-#### Create a new scenario <a href="#hjcie" id="hjcie"></a>
+### Create a new scenario <a href="#hjcie" id="hjcie"></a>
 
 * **Log in** to your Make account.
 * Click **Create a new scenario** to start building your workflow
@@ -23,7 +23,7 @@ To integrate Clearout with any other app via Make, you need a Make account.​ I
 {% endstep %}
 
 {% step %}
-#### Set up a trigger connection
+### Set up a trigger connection
 
 Every scenario starts with a module (connector) that triggers the workflow. For example, using **Google Sheets**:​
 
@@ -37,7 +37,7 @@ You can use any other trigger app (forms, CRM, etc.) in the same way.
 {% endstep %}
 
 {% step %}
-#### Select a Clearout action
+### Select a Clearout action
 
 After configuring your trigger, add a Clearout module to perform the desired action:​
 
@@ -82,7 +82,7 @@ This is useful for:
 {% endstep %}
 
 {% step %}
-**Connect your Clearout account**
+### **Connect your Clearout account**
 
 * In the Clearout module, click **Add** to create a new connection.​
 * When prompted, paste your **Clearout API Token**
@@ -98,7 +98,7 @@ This is useful for:
 {% endstep %}
 
 {% step %}
-**Execute the scenario**
+### **Execute the scenario**
 
 After all modules are configured:
 
