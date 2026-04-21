@@ -45,9 +45,9 @@ After configuring your trigger, add a Clearout module to perform the desired act
 * From the list of available actions, choose one based on your requirement.
 * Click **OK** to proceed.​
 
-Clearout provides the following **key actions** in [Make.com](https://make.com)
+Clearout provides the following **key actions** in [Make.com](https://make.com) :
 
-**Verify Email Address**
+**4.1 Verify Email Address**
 
 Validate an email address to check its deliverability and quality
 
@@ -63,7 +63,7 @@ Using this, you can reduce bounce rates and improve email campaign performance.
 
 <div data-with-frame="true"><figure><img src="../../.gitbook/assets/make_clearout_ev_action.png" alt=""><figcaption></figcaption></figure></div>
 
-**Find Email**
+**4.2 Find Email**
 
 Find a professional, pre-verified email address using:
 
